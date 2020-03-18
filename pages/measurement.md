@@ -1,5 +1,3 @@
-
-
 # Measurement & Optimization
 
 **Focus on end-to-end optimizations that increase the overall carbon efficiency.**
