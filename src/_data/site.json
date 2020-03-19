@@ -1,0 +1,12 @@
+{
+  "showThemeCredit": true,
+  "name": "🌱 Principles.Green",
+  "shortDesc": "The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build and run sustainable software applications.",
+  "url": "https://principles.green",
+  "authorEmail": "asim@asim.dev",
+  "authorHandle": "@jawache",
+  "authorName": "Asim Hussain",
+  "enableThirdPartyComments": false,
+  "maxPostsPerPage": 5,
+  "faviconPath": "/images/favicon.png"
+}

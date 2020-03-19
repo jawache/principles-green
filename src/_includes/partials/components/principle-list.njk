@@ -1,0 +1,19 @@
+<hr/>
+
+<h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">All Principles</h2>
+
+<div class="principles-list">
+    <ol>
+        {%- for principle in collections.principles -%}
+            <li {% if page.url == principle.url %} class="active"{% endif %}>
+
+                <a href="{{principle.url}}">
+                    {{principle.data.title}}
+                </a>&nbsp;
+            {% if page.url == principle.url %} ⭢{% endif %}
+                {{principle.data.summary}}
+                {% if page.url == principle.url %} ⭠{% endif %}
+            </li>
+        {%- endfor -%}
+    </ol>
+</div>

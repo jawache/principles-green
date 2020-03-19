@@ -7,6 +7,7 @@ npm-debug.*
 .sass-cache
 node_modules
 dist 
+__OLD__
 
 # Specifics
 

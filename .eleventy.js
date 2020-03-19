@@ -14,7 +14,7 @@ const parseTransform = require('./src/transforms/parse-transform.js');
 // Import data files
 const site = require('./src/_data/site.json');
 
-module.exports = function(config) {
+module.exports = function (config) {
   // Filters
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('markdownFilter', markdownFilter);
@@ -22,6 +22,8 @@ module.exports = function(config) {
 
   // Layout aliases
   config.addLayoutAlias('home', 'layouts/home.njk');
+  config.addLayoutAlias('post', 'layouts/post.njk');
+  config.addLayoutAlias('principle', 'layouts/principle.njk');
 
   // Transforms
   config.addTransform('htmlmin', htmlMinTransform);
@@ -51,6 +53,14 @@ module.exports = function(config) {
       .slice(0, site.maxPostsPerPage);
   });
 
+
+  // Sort with `Array.sort`
+  config.addCollection("principles", function (collection) {
+    return collection.getFilteredByTag("principle").sort((a, b) => {
+      return a.data.order - b.data.order;
+    });
+  });
+
   // Plugins
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
@@ -58,7 +68,7 @@ module.exports = function(config) {
   // 404 
   config.setBrowserSyncConfig({
     callbacks: {
-      ready: function(err, browserSync) {
+      ready: function (err, browserSync) {
         const content_404 = fs.readFileSync('dist/404.html');
 
         browserSync.addMiddleware("*", (req, res) => {
