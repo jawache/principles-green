@@ -5,7 +5,7 @@ order: 2
 tags: principle
 ---
 
-Most electricity is still produced through the burning of fossil fuels and is responsible for [49% of the carbon emitted](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions) into the atmosphere.
+Most electricity is still produced through the burning of fossil fuels and is responsible for [49% of the carbon emitted](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions#co2-emissions-by-sector) into the atmosphere.
 
 All software, from the applications running on your smartphone to the training of machine learning models running in data centers, consumes electricity in its execution. One of the best ways we can reduce electricity consumption and the subsequent carbon emissions made by our software is to **make our applications more energy efficient**. 
 
