@@ -9,7 +9,7 @@ When calculating the total carbon emissions for the computers running your softw
 
 A way to account for embodied carbon is to amortize the carbon over the expected life span of a device. For example, if it took 4 tons of carbon to build a server and we expect the server to have a 4-year lifespan, we can consider this equivalent to 1 ton of carbon being released per year during its lifespan.
 
-![alt_text](/images/principles/embodied-carbon-1.png "Embodied carbon of a server amortized over 4 years.")
+![alt_text](/assets/images/principles/embodied-carbon-1.png "Embodied carbon of a server amortized over 4 years.")
 
 Depending on the carbon intensity of your energy mix the embodied carbon cost can be significant compared to the carbon cost of the electricity powering the server.
 

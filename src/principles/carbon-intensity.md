@@ -19,11 +19,11 @@ If your computer is plugged directly into a wind farm, then the electricity it c
 - **Carbon intensity also changes over time** due to the variable nature of renewable energy. For example, when it’s cloudy or the wind isn’t blowing, carbon intensity **increases** since more of the electricity in your mix is coming from sources that emit carbon.
 
 
-![alt_text](/images/principles/carbon-intensity-1.png "Carbon intensity changes over time as renewable sources increase or decrease.")
+![alt_text](/assets/images/principles/carbon-intensity-1.png "Carbon intensity changes over time as renewable sources increase or decrease.")
 
 Demand for electricity varies during the day, that demand needs to be met by supply. Some of that supply _can easily_ control the power it produces, e.g. a coal power plant can burn less coal. Some of that supply _can’t easily_ control the power it produces, e.g. a wind farm can’t control how much the wind blows, it can only throw away (curtail) electricity that was made essentially for free.
 
-![alt_text](/images/principles/carbon-intensity-2.png "Fossil Fuel sources of power are usually scaled back first and renewables scaled back last.")
+![alt_text](/assets/images/principles/carbon-intensity-2.png "Fossil Fuel sources of power are usually scaled back first and renewables scaled back last.")
 
 As a by-product of the way energy markets work as demand for electricity goes down usually the high emitting fossil fuel sources of power are scaled back first with renewables scaled back last.
 
@@ -38,7 +38,7 @@ The marginal plant emits carbon, at any moment we have the carbon intensity of t
 
 Fossil fueled power plants rarely scale down to 0, they have a minimum functioning threshold, some don’t scale at all they are considered consistent always-on baseload. Because of this, we can sometimes reach the perverse scenario where we throw away (curtail) renewable energy that was created for free in order to consume energy from fossil fuel power plants created with a fuel that costs money.
 
-![alt_text](/images/principles/carbon-intensity-3.png "There are moments when the marginal carbon intensity reaches 0")
+![alt_text](/assets/images/principles/carbon-intensity-3.png "There are moments when the marginal carbon intensity reaches 0")
 
 > The marginal carbon intensity could be 0 gCO<sub>2</sub>eq/kWh when new load would be met with supply from a renewable source that would otherwise have been curtailed.
 

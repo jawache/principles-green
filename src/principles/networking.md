@@ -9,7 +9,7 @@ A network is a series of switches, routers, and servers. All the computers and n
 
 When you send data across the internet, you are sending that data through many devices in the network, each one of those devices consuming electricity. As a result, **any data you send or receive over the internet emits carbon**.
 
-![alt_text](/images/principles/networking-1.png "Nodes in a network run on different energy mixes")
+![alt_text](/assets/images/principles/networking-1.png "Nodes in a network run on different energy mixes")
 
 The amount of carbon emitted to send data depends on many factors including:
 
