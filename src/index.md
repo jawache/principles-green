@@ -4,7 +4,7 @@ title: Principles of Sustainable Software Engineering
 ---
 # Introduction
 
-**Sustainable Software Engineering** is a new emerging discipline at the intersection of climate, software practices and architecture, electricity markets, hardware and data centre design. 
+**Sustainable Software Engineering** is a new emerging discipline at the intersection of climate science, software practices and architecture, electricity markets, hardware and data centre design. 
 
 The **Principles of Sustainable Software Engineering** are a core set of competencies needed to define, build and run sustainable software applications. 
 
