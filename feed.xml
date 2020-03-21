@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>🌱 Principles.Green</title>
+	<subtitle></subtitle>
+	<link href="https://principles.green/feed.xml" rel="self"/>
+	<link href="https://principles.green/"/>
+	<updated>2019-06-18T00:00:00+00:00</updated>
+	<id>https://principles.green</id>
+	<author>
+  <name>Asim Hussain</name>
+  <email>asim@asim.dev</email>
+	</author>
+	
+  
+  <entry>
+    <title>A simple post</title>
+    <link href="https://principles.green/posts/a-simple-post/"/>
+    <updated>2019-06-18T00:00:00+00:00</updated>
+    <id>https://principles.green/posts/a-simple-post/</id>
+    <content type="html"><![CDATA[
+      <p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
+<p>How about a <code>&lt;blockquote&gt;</code>?</p>
+<blockquote>
+<p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+</blockquote>
+<p>A list of stuff:</p>
+<ul>
+<li>Sed posuere consectetur est at lobortis</li>
+<li>Aenean lacinia bibendum nulla sed consectetur</li>
+<li>Sed posuere consectetur est at lobortis</li>
+</ul>
+<p>How about an ordered list of stuff:</p>
+<ol>
+<li>Sed posuere consectetur est at lobortis</li>
+<li>Aenean lacinia bibendum nulla sed consectetur</li>
+<li>Sed posuere consectetur est at lobortis</li>
+</ol>
+<p>Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.</p>
+
+    ]]></content>
+  </entry>
+	
+  
+  <entry>
+    <title>A post with figures and video</title>
+    <link href="https://principles.green/posts/a-post-with-figures-and-video/"/>
+    <updated>2019-06-18T00:00:00+00:00</updated>
+    <id>https://principles.green/posts/a-post-with-figures-and-video/</id>
+    <content type="html"><![CDATA[
+      <p>A post to demonstrate how a blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
+<p>If you want to make an image bleed-out, add a title attribute to it and the front-end will automatically wrap it in a <code>&lt;figure&gt;</code> tag for you.</p>
+<p><img src="/images/demo-image-1.jpg" alt="The top of a grey concrete building with a blue sky in the background" title="Brutalism at its finest. Photo by Artificial Photography on Unsplash."></p>
+<p>You can also add videos to posts from YouTube or Vimeo (or wherever, really) and the front-end will also make those bleed-out for you too.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_38JDGnr0vA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Finally, how about a <code>&lt;blockquote&gt;</code>?</p>
+<blockquote>
+<p>Quotes will take a slightly different style to normal body text and look fancy.</p>
+</blockquote>
+<p><img src="/images/demo-image-2.jpg" alt="Person holds up a photograph of a riverside and buildings with the same river as a backdrop" title="Remember, if you want a figure and caption, add a 'title' attribute to image in the body field — Photo by Kharytonova Antonina on Unsplash."></p>
+<p>Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.</p>
+
+    ]]></content>
+  </entry>
+	
+  
+  <entry>
+    <title>A post with code samples</title>
+    <link href="https://principles.green/posts/a-post-with-code-samples/"/>
+    <updated>2019-06-18T00:00:00+00:00</updated>
+    <id>https://principles.green/posts/a-post-with-code-samples/</id>
+    <content type="html"><![CDATA[
+      <p>The best way to demo a code post is to display a real life post, so check out this one from <a href="https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/">andy-bell.design</a> about a full bleed CSS utility.</p>
+<hr>
+<p>Sometimes you want to break your components out of the constraints that they find themselves in. A common situation where this occurs is when you don’t have much control of the container that it exists in, such as a CMS main content area.</p>
+<p>This is even more the case with editing tools such as the <a href="https://wordpress.org/gutenberg/">WordPress Gutenberg editor</a>, where in theory, you could pull in a component from a design system and utilise it in the main content of your web page. In these situations, it can be pretty darn handy to have a little utility that makes the element 100% of the viewport’s width <em>and</em> still maintain its flow within its parent container.</p>
+<p>This is when I normally pull the <code>.full-bleed</code> utility class out of my back pocket.</p>
+<h2>The <code>.full-bleed</code> utility</h2>
+<p>It’s small, but hella mighty:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.full-bleed</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">width</span><span class="token punctuation">:</span> 100vw<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-50%<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Here it is in a context where it makes a fancy <code>&lt;aside&gt;</code> and a <code>&lt;figure&gt;</code> element bleed out of their parent container.</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Piccalilli CSS Utility — Issue  #2 — Full bleed utility" src="//codepen.io/andybelldesign/embed/Nmxrwv/?height=300&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/andybelldesign/pen/Nmxrwv/'>Piccalilli CSS Utility — Issue  #2 — Full bleed utility</a> by Andy Bell
+  (<a href='https://codepen.io/andybelldesign'>@andybelldesign</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+<p>The <code>.full-bleed</code> utility gives those elements prominence and <em>importantly</em> keeps their semantic place in the page. Just how I like it.</p>
+<hr>
+<p>🔥 <strong>Pro tip</strong>: When working with a utility like <code>.full-bleed</code>, it’s a good idea to add an inner container that has a max-width and auto horizontal margin. For this, I normal create a shared <code>.wrapper</code> component like this:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.wrapper</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-width</span><span class="token punctuation">:</span> 50rem<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-left</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-right</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Having a container like <code>.wrapper</code> helps to create consistent, centred content.</p>
+<hr>
+<h3>How the <code>.full-bleed</code> utility works</h3>
+<p>We set the container to be <code>width: 100vw</code>, which equates to the full viewport width. We couldn’t set it to <code>width: 100%</code> because it would only fill the space of its parent element. The parent element’s width <em>is</em> useful though, because by setting <code>margin-left: 50%</code>, we are telling the component to align its <strong>left edge</strong> to the center of its parent element, because <code>50%</code> is half of the <strong>parent element’s</strong> width.</p>
+<p>Finally, we use CSS transforms to <code>translateX(-50%)</code>. Because the transform works off the element’s dimensions and not the parent’s dimensions, it’ll pull the element back <code>50vw</code>, because it’s <code>100vw</code> wide, thus making it sit perfectly flush with the viewport’s edges.</p>
+<h2>Wrapping up</h2>
+<p>Hopefully this short and sweet trick will help you out on your projects. If it does, <a href="https://twitter.com/andybelldesign">drop me a tweet</a>, because I’d love to see it!</p>
+
+    ]]></content>
+  </entry>
+	
+</feed>
