@@ -56,7 +56,7 @@
 <blockquote>
 <p>Quotes will take a slightly different style to normal body text and look fancy.</p>
 </blockquote>
-<p><img src="/assets/images/demo-image-2.jpg?v=52865c6ac03aaf98e025628117310c6e" alt="Person holds up a photograph of a riverside and buildings with the same river as a backdrop" title="Remember, if you want a figure and caption, add a 'title' attribute to image in the body field — Photo by Kharytonova Antonina on Unsplash."></p>
+<p><img src="/assets/images/demo-image-2.jpg?v=ac5a2aa7d62dc8df220b459f94778310" alt="Person holds up a photograph of a riverside and buildings with the same river as a backdrop" title="Remember, if you want a figure and caption, add a 'title' attribute to image in the body field — Photo by Kharytonova Antonina on Unsplash."></p>
 <p>Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.</p>
 
     ]]></content>
