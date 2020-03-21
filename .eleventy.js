@@ -34,6 +34,7 @@ module.exports = function(config) {
   config.addPassthroughCopy('src/assets/fonts');
   config.addPassthroughCopy('src/assets/images');
   config.addPassthroughCopy('src/assets/js');
+  config.addPassthroughCopy('src/assets/css');
 
   // Cachebusting
   config.addPlugin(
