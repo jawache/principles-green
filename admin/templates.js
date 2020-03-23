@@ -201,7 +201,7 @@ output += result;
 callback(null);
 });
 env.waterfall(tasks, function(){
-output += "\n    <script>\n      document\n        .documentElement\n        .classList\n        .remove('no-js');\n    </script>\n    <link rel=\"stylesheet\" type=\"text/css\"  href=\"/assets/css/global.css\"></link>\n    ";
+output += "\n    <script>\n      document\n        .documentElement\n        .classList\n        .remove('no-js');\n    </script>\n    <link rel=\"stylesheet\" type=\"text/css\"  href=\"/assets/css/global.css\"></link>\n\n    <!-- Global site tag (gtag.js) - Google Analytics -->\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-161608018-1\"></script>\n    <script>\n      window.dataLayer = window.dataLayer || [];\n      function gtag() {\n        dataLayer.push(arguments);\n      }\n      gtag('js', new Date());\n\n      gtag('config', 'UA-161608018-1');\n    </script>\n\n    ";
 (parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("head"))(env, context, frame, runtime, function(t_6,t_5) {
 if(t_6) { cb(t_6); return; }
 output += t_5;
@@ -265,7 +265,7 @@ cb(null, output);
 }
 }
 function b_head(env, context, frame, runtime, cb) {
-var lineno = 16;
+var lineno = 29;
 var colno = 7;
 var output = "";
 try {
@@ -277,7 +277,7 @@ cb(null, output);
 }
 }
 function b_content(env, context, frame, runtime, cb) {
-var lineno = 20;
+var lineno = 33;
 var colno = 7;
 var output = "";
 try {
@@ -289,7 +289,7 @@ cb(null, output);
 }
 }
 function b_foot(env, context, frame, runtime, cb) {
-var lineno = 22;
+var lineno = 35;
 var colno = 7;
 var output = "";
 try {
@@ -850,7 +850,13 @@ output += "</h1>\n    ";
 if(runtime.contextOrFrameLookup(context, frame, "introSummary")) {
 output += "\n      <div class=\"[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ]\">";
 output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "introSummary")), env.opts.autoescape);
-output += "</div>\n    ";
+output += "\n      </div>\n    ";
+;
+}
+output += "\n\n    ";
+if(runtime.contextOrFrameLookup(context, frame, "showCTAButtons")) {
+output += "\n      <p>\n        ";
+output += "\n        <a class=\"[ button ] [ font-base text-base weight-bold ]\" href=\"https://www.subscribepage.com/principles-green-register\" target=\"_blank\">Join the newsletter</a>\n      </p>\n    ";
 ;
 }
 output += "\n  </div>\n</header>";
