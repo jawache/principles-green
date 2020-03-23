@@ -17,7 +17,7 @@ These eight principles form a shared understanding of what it means to be a Sust
 *   Cloud vendor or self-hosted.
 *   Programming language or framework.
 
-Through the synthesis of this knowledge, a Sustainable Software Engineer (SSE) can make decisions which have a **meaningful impact** on the carbon emissions of applications.
+Through the synthesis of this knowledge, a Sustainable Software Engineer (SSE) can make decisions which have a **meaningful impact** on the carbon emissions of their applications.
 
 ## Who should read this?
 
