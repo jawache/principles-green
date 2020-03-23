@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Principles of Sustainable Software Engineering
+showCTAButtons: yes
 ---
 # Introduction
 

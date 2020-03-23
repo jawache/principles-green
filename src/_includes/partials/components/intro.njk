@@ -6,7 +6,15 @@
       {% endif %}
       {{ introHeading }}</h1>
     {% if introSummary %}
-      <div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ]">{{ introSummary | safe }}</div>
+      <div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ]">{{ introSummary | safe }}
+      </div>
+    {% endif %}
+
+    {% if showCTAButtons %}
+      <p>
+        {# <a class="[ button ] [ font-base text-base weight-bold ]" href="#" target="_blank">Become a signatory</a> #}
+        <a class="[ button ] [ font-base text-base weight-bold ]" href="http://go.principles.green/register" target="_blank">Join the newsletter</a>
+      </p>
     {% endif %}
   </div>
 </header>

@@ -10,6 +10,11 @@
       "external": false
     },
     {
+      "text": "Newsletter",
+      "url": "https://go.principles.green/register",
+      "external": true
+    },
+    {
       "text": "GitHub",
       "url": "https://github.com/jawache/principles-green",
       "external": true
