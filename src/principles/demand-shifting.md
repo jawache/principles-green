@@ -7,7 +7,9 @@ tags: principle
 
 There is currently little in the way of storage or buffering in electrical grid systems. Normally electricity is produced so supply always meets demand. If the demand for electricity increases then supply needs to be increased from the *marginal power plant* which is typically a high carbon-emitting fossil fuel plant. If more energy is being generated from renewables than is needed to support demand, and all our storage options are full, then we curtail (throw away) that clean energy. 
 
-If you can be flexible with when and where you run workloads then you can then choose to consume electricity when the carbon intensity is less and pause when carbon intensity is high. [Studies](https://ieeexplore.ieee.org/document/6128960) have shown that these actions can result in a carbon reduction of as much as 45% to 99% depending on the number of renewables powering the grid.
+If you can be flexible with when and where you run workloads then you can then choose to consume electricity when the carbon intensity is less and pause when carbon intensity is high. 
+
+> [Studies](https://ieeexplore.ieee.org/document/6128960) have shown that these actions can result in a carbon reduction of as much as 45% to 99% depending on the number of renewables powering the grid.
 
 Latency is a good signal for identifying workloads that can be flexible. Latency is the time interval between a trigger and its response. Whether a compute workload was triggered by a user clicking a button on a webpage or from a timer kicking off a batch job, the time it takes for that trigger to result in a response is the latency.
 
