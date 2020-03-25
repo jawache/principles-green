@@ -175,11 +175,8 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<!DOCTYPE html>\n<html lang=\"en\" class=\"no-js\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"";
-output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"title"), env.opts.autoescape);
-output += "\" href=\"";
-output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"url"), env.opts.autoescape);
-output += "/feed.xml\"/>\n    <link rel=\"icon\" href=\"";
+output += "<!DOCTYPE html>\n<html lang=\"en\" class=\"no-js\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    ";
+output += "\n    <link rel=\"icon\" href=\"";
 output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"faviconPath"), env.opts.autoescape);
 output += "\" type=\"image/png\"/>\n    ";
 var tasks = [];
@@ -1219,7 +1216,7 @@ var output = "";
 try {
 var parentTemplate = null;
 var t_1;
-t_1 = runtime.contextOrFrameLookup(context, frame, "title") + " - " + runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"name");
+t_1 = runtime.contextOrFrameLookup(context, frame, "title") + " • " + runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"longName");
 frame.set("pageTitle", t_1, true);
 if(frame.topLevel) {
 context.setVariable("pageTitle", t_1);
@@ -1229,7 +1226,7 @@ context.addExport("pageTitle", t_1);
 }
 output += "\n";
 var t_2;
-t_2 = "";
+t_2 = runtime.contextOrFrameLookup(context, frame, "summary");
 frame.set("pageDesc", t_2, true);
 if(frame.topLevel) {
 context.setVariable("pageDesc", t_2);
@@ -1291,51 +1288,50 @@ output += "\n\n<title>";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "pageTitle"), env.opts.autoescape);
 output += "</title>\n<link rel=\"canonical\" href=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "currentUrl"), env.opts.autoescape);
-output += "\" />\n\n<meta property=\"og:site_name\" content=\"";
+output += "\"/>\n\n<meta property=\"og:site_name\" content=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "siteTitle"), env.opts.autoescape);
-output += "\" />\n<meta property=\"og:title\" content=\"";
+output += "\"/>\n<meta property=\"og:title\" content=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "pageTitle"), env.opts.autoescape);
-output += "\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:url\" content=\"";
+output += "\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta property=\"og:url\" content=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "currentUrl"), env.opts.autoescape);
-output += "\" />\n\n";
+output += "\"/>\n\n";
 if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"authorHandle")) {
 output += "\n  <meta name=\"twitter:creator\" content=\"@";
 output += runtime.suppressValue(env.getFilter("replace").call(context, runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"authorHandle"),"@",""), env.opts.autoescape);
-output += "\" />\n";
+output += "\"/>\n";
 ;
 }
 output += "\n\n";
-if(runtime.contextOrFrameLookup(context, frame, "metaDesc")) {
+if(runtime.contextOrFrameLookup(context, frame, "pageDesc")) {
 output += "\n  <meta name=\"description\" content=\"";
-output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "metaDesc"), env.opts.autoescape);
-output += "\" />\n  <meta name=\"twitter:description\" content=\"";
-output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "metaDesc"), env.opts.autoescape);
-output += "\" />\n  <meta property=\"og:description\" content=\"";
-output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "metaDesc"), env.opts.autoescape);
-output += "\" />\n";
+output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "pageDesc"), env.opts.autoescape);
+output += "\"/>\n  <meta name=\"twitter:description\" content=\"";
+output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "pageDesc"), env.opts.autoescape);
+output += "\"/>\n  <meta property=\"og:description\" content=\"";
+output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "pageDesc"), env.opts.autoescape);
+output += "\"/>\n";
 ;
 }
 output += "\n\n";
 if(runtime.contextOrFrameLookup(context, frame, "socialImage")) {
-output += "  \n  <meta property=\"og:image\" content=\"";
+output += "\n  <meta property=\"og:image\" content=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "socialImage"), env.opts.autoescape);
-output += "\" />\n  <meta name=\"twitter:image\" content=\"";
+output += "\"/>\n  <meta name=\"twitter:image\" content=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "socialImage"), env.opts.autoescape);
-output += "\" />\n  <meta property=\"og:image:alt\" content=\"Page image for ";
+output += "\"/>\n  <meta property=\"og:image:alt\" content=\"Page image for ";
 output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"name"), env.opts.autoescape);
-output += "\" />\n  <meta name=\"twitter:image:alt\" content=\"Page image for ";
+output += "\"/>\n  <meta name=\"twitter:image:alt\" content=\"Page image for ";
 output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"name"), env.opts.autoescape);
-output += "\" />\n";
+output += "\"/>\n";
 ;
 }
 output += "\n\n";
 if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"paymentPointer")) {
 output += "\n  <meta name=\"monetization\" content=\"";
 output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"paymentPointer"), env.opts.autoescape);
-output += "\" />\n";
+output += "\"/>\n";
 ;
 }
-output += "\n";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
