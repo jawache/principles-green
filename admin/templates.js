@@ -852,8 +852,7 @@ output += "\n      </div>\n    ";
 }
 output += "\n\n    ";
 if(runtime.contextOrFrameLookup(context, frame, "showCTAButtons")) {
-output += "\n      <p>\n        <a class=\"[ button ] [ font-base text-base weight-bold ]\" href=\"https://go.principles.green/pledge\" target=\"_blank\">Sign the Pledge</a>\n        ";
-output += "\n      </p>\n    ";
+output += "\n      <p>\n        <a class=\"[ button ] [ font-base text-base weight-bold ]\" href=\"https://go.principles.green/pledge\" target=\"_blank\">Endorse the principles</a>\n        <a class=\"[ button ] [ font-base text-base weight-bold ]\" href=\"https://go.principles.green/register\" target=\"_blank\">Join the newsletter</a>\n      </p>\n    ";
 ;
 }
 output += "\n  </div>\n</header>";
