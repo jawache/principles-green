@@ -7,7 +7,7 @@ tags: principle
 
 You must understand the carbon efficiency of all parts of your application in order to understand where effort should be prioritized. For example, is it worthwhile to spend two weeks reducing megabytes from network communication if the database queries are causing ten times more carbon to be emitted?
 
-The most impactful optimizations will come from those responsible for developing and running applications understanding the carbon emissions of an application across the full stack, from the front-end to the data center. 
+The most impactful optimizations will come from those responsible for developing and running applications understanding the carbon pollution of an application across the full stack, from the front-end to the data center. 
 
 A key to success in optimization is to choose a measurement criterion which will give clear signals as to where best to put optimization efforts.
 

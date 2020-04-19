@@ -5,7 +5,7 @@ order: 4
 tags: principle
 ---
 
-When calculating the total carbon emissions for the computers running your software, account for both the carbon emissions to run the computer and the embodied carbon of the computer. Embodied carbon (otherwise referred to as "Embedded Carbon") is the amount of carbon released by something outside of its operation. For example, the device you are reading this document on released some carbon in its creation, once it reaches the end of life disposing of it may release more.
+When calculating the total carbon pollution for the computers running your software, account for both the carbon pollution to run the computer and the embodied carbon of the computer. Embodied carbon (otherwise referred to as "Embedded Carbon") is the amount of carbon released by something outside of its operation. For example, the device you are reading this document on released some carbon in its creation, once it reaches the end of life disposing of it may release more.
 
 A way to account for embodied carbon is to amortize the carbon over the expected life span of a device. For example, if it took 4 tons of carbon to build a server and we expect the server to have a 4-year lifespan, we can consider this equivalent to 1 ton of carbon being released per year during its lifespan.
 
