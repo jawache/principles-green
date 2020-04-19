@@ -22,6 +22,148 @@ root: root
 
 })();
 })();
+(function() {(window.nunjucksPrecompiled = window.nunjucksPrecompiled || {})["layouts/applied.njk"] = (function() {
+function root(env, context, frame, runtime, cb) {
+var lineno = 0;
+var colno = 0;
+var output = "";
+try {
+var parentTemplate = null;
+env.getTemplate("layouts/base.njk", true, "layouts/applied.njk", false, function(t_3,t_2) {
+if(t_3) { cb(t_3); return; }
+parentTemplate = t_2
+for(var t_1 in parentTemplate.blocks) {
+context.addBlock(t_1, parentTemplate.blocks[t_1]);
+}
+output += "\n";
+var t_4;
+t_4 = "Post";
+frame.set("pageType", t_4, true);
+if(frame.topLevel) {
+context.setVariable("pageType", t_4);
+}
+if(frame.topLevel) {
+context.addExport("pageType", t_4);
+}
+output += "\n\n";
+output += "\n";
+var t_5;
+t_5 = runtime.contextOrFrameLookup(context, frame, "title");
+frame.set("introHeading", t_5, true);
+if(frame.topLevel) {
+context.setVariable("introHeading", t_5);
+}
+if(frame.topLevel) {
+context.addExport("introHeading", t_5);
+}
+output += "\n";
+var t_6;
+t_6 = runtime.contextOrFrameLookup(context, frame, "summary");
+frame.set("introSummary", t_6, true);
+if(frame.topLevel) {
+context.setVariable("introSummary", t_6);
+}
+if(frame.topLevel) {
+context.addExport("introSummary", t_6);
+}
+output += "\n";
+var t_7;
+t_7 = runtime.contextOrFrameLookup(context, frame, "nextUrl");
+frame.set("paginationNextUrl", t_7, true);
+if(frame.topLevel) {
+context.setVariable("paginationNextUrl", t_7);
+}
+if(frame.topLevel) {
+context.addExport("paginationNextUrl", t_7);
+}
+output += "\n";
+var t_8;
+t_8 = runtime.contextOrFrameLookup(context, frame, "prevUrl");
+frame.set("paginationPrevUrl", t_8, true);
+if(frame.topLevel) {
+context.setVariable("paginationPrevUrl", t_8);
+}
+if(frame.topLevel) {
+context.addExport("paginationPrevUrl", t_8);
+}
+output += "\n\n";
+(parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("content"))(env, context, frame, runtime, function(t_10,t_9) {
+if(t_10) { cb(t_10); return; }
+output += t_9;
+if(parentTemplate) {
+parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
+} else {
+cb(null, output);
+}
+})});
+} catch (e) {
+  cb(runtime.handleError(e, lineno, colno));
+}
+}
+function b_content(env, context, frame, runtime, cb) {
+var lineno = 9;
+var colno = 3;
+var output = "";
+try {
+var frame = frame.push(true);
+output += "\n  <main id=\"main-content\" tabindex=\"-1\">\n    <article class=\"[ post ] [ h-entry ]\">\n      ";
+var tasks = [];
+tasks.push(
+function(callback) {
+env.getTemplate("partials/components/intro.njk", false, "layouts/applied.njk", false, function(t_12,t_11) {
+if(t_12) { cb(t_12); return; }
+callback(null,t_11);});
+});
+tasks.push(
+function(template, callback){
+template.render(context.getVariables(), frame, function(t_14,t_13) {
+if(t_14) { cb(t_14); return; }
+callback(null,t_13);});
+});
+tasks.push(
+function(result, callback){
+output += result;
+callback(null);
+});
+env.waterfall(tasks, function(){
+output += "\n      <div class=\"[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 ";
+output += runtime.suppressValue((!runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"enableThirdPartyComments")?"pad-bottom-900":""), env.opts.autoescape);
+output += " text-500 ] [ sf-flow ] [ e-content ]\">\n\n        ";
+output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "content")), env.opts.autoescape);
+output += "\n      </div>\n    </article>\n    ";
+var tasks = [];
+tasks.push(
+function(callback) {
+env.getTemplate("partials/components/pagination.njk", false, "layouts/applied.njk", false, function(t_16,t_15) {
+if(t_16) { cb(t_16); return; }
+callback(null,t_15);});
+});
+tasks.push(
+function(template, callback){
+template.render(context.getVariables(), frame, function(t_18,t_17) {
+if(t_18) { cb(t_18); return; }
+callback(null,t_17);});
+});
+tasks.push(
+function(result, callback){
+output += result;
+callback(null);
+});
+env.waterfall(tasks, function(){
+output += "\n  </main>\n";
+cb(null, output);
+})});
+} catch (e) {
+  cb(runtime.handleError(e, lineno, colno));
+}
+}
+return {
+b_content: b_content,
+root: root
+};
+
+})();
+})();
 (function() {(window.nunjucksPrecompiled = window.nunjucksPrecompiled || {})["layouts/archive.njk"] = (function() {
 function root(env, context, frame, runtime, cb) {
 var lineno = 0;
