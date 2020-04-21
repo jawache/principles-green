@@ -38,5 +38,16 @@ Anyone building, deploying or managing applications.
 
 Here are a few examples of applying the principals of sustainable software engineering to some common application architectures:
 
-* [Web-Queue-Worker](principals/applied/web-queue-worker/)
-* [N-tier](principals/applied/n-tier/)
+* [Web-Queue-Worker](principles/applied/web-queue-worker/)
+* [N-tier](principles/applied/n-tier/)
+* Microservices 
+* Event-driven architecture
+* Big data
+* Big Compute
+ 
+Here are a few examples of applying the principals of sustainable software engineering to some common infrastructure patterns:
+ 
+* Virtualized servers
+* IAAS
+* PAAS
+* Databases
