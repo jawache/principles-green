@@ -38,5 +38,5 @@ Anyone building, deploying or managing applications.
 
 Here are a few examples of applying the principals of sustainable software engineering to some common application architectures:
 
-* [Web-Queue-Worker](principals/applied/web-queue-worker.md)
-* N-tier
+* [Web-Queue-Worker](principals/applied/web-queue-worker/)
+* [N-tier](principals/applied/n-tier/)
