@@ -33,3 +33,10 @@ Anyone building, deploying or managing applications.
 6. [Networking](principles/networking/): Reduce the amount of data and distance it must travel across the network.
 7. [Demand Shifting](principles/demand-shifting/): Be flexible regarding when and where you run workloads to take advantage of low carbon intensity electricity.
 8. [Measurement & Optimization](principles/measurement/): Focus on end-to-end optimizations that increase the overall carbon efficiency.
+
+## Applying the principals
+
+Here are a few examples of applying the principals of sustainable software engineering to some common application architectures:
+
+* [Web-Queue-Worker](principals/applied/web-queue-worker.md)
+* N-tier
