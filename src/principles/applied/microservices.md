@@ -29,12 +29,12 @@ Update your workload distribution and compute resources so that you use less res
 
 ## Reduce your number of microservices
 
-Microservices architecture is an effective way to isolate and focus a service around a specific business domain and decentralize ownership and knowledge throughout the team. Ensuring the appropriate level of abstraction is important to help limit network congestion, latency, and overall complexity
+A microservices architecture is an effective way to focus a service around a specific business domain and decentralize ownership and knowledge throughout the team or system. Ensuring the appropriate level of abstraction is important to help limit network congestion, latency, and overall complexity. 
 
 * Consider combining services, logically or physically, where similar scale points exist to reduce the footprint of the overall architecture.
 * If two or more microservices are highly coupled, consider co-locating to reduce network congestion and latency.  
-* Use languages and technology stacks that optimize efficiency of a specific microservices function. The independence and abstraction of functionality to an API layer means you are free to make the technical decisions that maximize utlization in your technical stack for each microservice. 
-* Consider running your resource-intensive microservices in a region with a lower carbon intensity 
+* Use languages and technology stacks that optimize the efficiency of a specific microservices function. The independence and abstraction of functionality to an API layer means you are free to make the technical decisions that maximize utlization in your technical stack for each microservice. 
+* Consider running any resource-intensive microservices in a region with a lower carbon intensity. 
 
 
 ## Optimize your database
