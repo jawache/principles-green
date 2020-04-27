@@ -42,6 +42,13 @@ Fossil fueled power plants rarely scale down to 0, they have a minimum functioni
 
 > The marginal carbon intensity could be 0 gCO<sub>2</sub>eq/kWh when new load would be met with supply from a renewable source that would otherwise have been curtailed.
 
+### Demand Shifting
+
+There is currently little in the way of storage or buffering in electrical grid systems. Normally electricity is produced so supply always meets demand. If the demand for electricity increases then supply needs to be increased from the *marginal power plant* which is typically a high carbon-emitting fossil fuel plant. If more energy is being generated from renewables than is needed to support demand, and all our storage options are full, then we curtail (throw away) that clean energy. 
+
+If you can be flexible with when and where you run workloads then you can then choose to consume electricity when the carbon intensity is less and pause when carbon intensity is high. 
+
+> [Studies](https://ieeexplore.ieee.org/document/6128960) have shown that these actions can result in a carbon reduction of as much as 45% to 99% depending on the number of renewables powering the grid.
 
 ### Calculating Carbon Intensity
 
