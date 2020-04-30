@@ -20,7 +20,9 @@ A way to account for embodied carbon is to amortize the carbon over the expected
 
 ![alt_text](/assets/images/principles/embodied-carbon-1.png "Embodied carbon of a server amortized over 4 years.")
  
-If we just added one more year to the lifespan of our 2019 R640 Dell Server then the amortized carbon drops from 320kg CO<sub>2</sub>eq/year to 256 kg CO<sub>2</sub>eq/year. 
+If we just added one more year to the lifespan of our 2019 R640 Dell Server then the amortized carbon drops from 320kg CO<sub>2</sub>eq/year to 256 kg CO<sub>2</sub>eq/year.
+
+![alt_text](/assets/images/principles/embodied-carbon-2.png "Embodied carbon of the same server amortized over 5 years.")
 
 Hardware is retired either because it breaks down or because it struggles to handle modern workloads. Software cannot help with the first however if we focus on building applications that can run on older hardware, we can help with the second.
 
