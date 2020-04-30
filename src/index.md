@@ -28,10 +28,10 @@ Anyone building, deploying or managing applications.
 1. [Carbon](principles/carbon/): Build applications that are carbon efficient.
 2. [Electricity](principles/electricity/): Build applications that are energy efficient.
 3. [Carbon Intensity](principles/carbon-intensity/): Consume electricity with the lowest carbon intensity.
-4. [Embodied Carbon](principles/embodied-carbon/): Even if you are not consuming electricity, you have still emitted carbon and must account for it.
+4. [Embodied Carbon](principles/embodied-carbon/): Build applications that run on older hardware.
 5. [Energy Proportionality](principles/energy-proportionality/): Run servers at a high rate of utilization.
 6. [Networking](principles/networking/): Reduce the amount of data and distance it must travel across the network.
-7. [Demand Shifting](principles/demand-shifting/): Be flexible regarding when and where you run workloads to take advantage of low carbon intensity electricity.
+7. [Demand Shaping](principles/demand-shaping/): Instead of shaping supply to meet demand, try shaping demand to match supply.
 8. [Measurement & Optimization](principles/measurement/): Focus on end-to-end optimizations that increase the overall carbon efficiency.
 
 ## Applying the principals

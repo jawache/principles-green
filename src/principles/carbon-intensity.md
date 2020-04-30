@@ -44,11 +44,15 @@ Fossil fueled power plants rarely scale down to 0, they have a minimum functioni
 
 ### Demand Shifting
 
-There is currently little in the way of storage or buffering in electrical grid systems. Normally electricity is produced so supply always meets demand. If the demand for electricity increases then supply needs to be increased from the *marginal power plant* which is typically a high carbon-emitting fossil fuel plant. If more energy is being generated from renewables than is needed to support demand, and all our storage options are full, then we curtail (throw away) that clean energy. 
+There is currently little in the way of storage or buffering in electrical grid systems. Normally electricity is produced so supply always meets demand. If more energy is being generated from renewables than is needed to support demand, and all our storage options are full, then we curtail (throw away) that clean energy. One solution is to shift workloads to times and locations where there is more supply of renewable energy, this is called *demand shifting*.
 
-If you can be flexible with when and where you run workloads then you can then choose to consume electricity when the carbon intensity is less and pause when carbon intensity is high. 
+If you can be flexible with when and where you run workloads then you can then choose to consume electricity when the carbon intensity is less and pause when carbon intensity is high. For example, training a machine learning model at a different time or region where the carbon intensity is much lower.
 
 > [Studies](https://ieeexplore.ieee.org/document/6128960) have shown that these actions can result in a carbon reduction of as much as 45% to 99% depending on the number of renewables powering the grid.
+
+Look at your application end-to-end, identify opportunities for being flexible regarding workloads and use the carbon intensity of electricity as a signal for when or if to run those workloads.
+
+![alt_text](/assets/images/principles/demand-shifting-1.png "In this example the red line is the carbon intensity of electricity, if we shift a workload a little into the future from it's preferred start time of midnight, we can take advantage of lower carbon intensity electricity.")
 
 ### Calculating Carbon Intensity
 
