@@ -17,3 +17,4 @@ The amount of carbon emitted to send data depends on many factors including:
 *   The number of hops between network devices
 *   The energy efficiency of the network devices
 *   The carbon intensity of energy in the region of each device at the time the data is transmitted.
+*   The network protocol used to coordinate data transmission - e.g. multiplex, header compression, TLS/Quic
