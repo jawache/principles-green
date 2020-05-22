@@ -34,9 +34,9 @@ Anyone building, deploying or managing applications.
 7. [Demand Shaping](principles/demand-shaping/): Instead of shaping supply to meet demand, try shaping demand to match supply.
 8. [Measurement & Optimization](principles/measurement/): Focus on end-to-end optimizations that increase the overall carbon efficiency.
 
-## Applying the principals
+## Applying the principles
 
-Here are a few examples of applying the principals of sustainable software engineering to some common application architectures:
+Here are a few examples of applying the principles of sustainable software engineering to some common application architectures:
 
 * [Web-Queue-Worker](principles/applied/web-queue-worker/)
 * [N-tier](principles/applied/n-tier/)
@@ -45,7 +45,7 @@ Here are a few examples of applying the principals of sustainable software engin
 * Big data
 * Big Compute
  
-Here are a few examples of applying the principals of sustainable software engineering to some common infrastructure patterns:
+Here are a few examples of applying the principles of sustainable software engineering to some common infrastructure patterns:
  
 * Virtualized servers
 * IAAS
