@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Principles of Sustainable Software Engineering
+summary: Core competencies needed to define, build, and run sustainable software applications
 showCTAButtons: yes
 ---
 # Introduction
