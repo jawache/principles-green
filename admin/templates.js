@@ -1395,17 +1395,27 @@ context.setVariable("currentUrl", t_4);
 if(frame.topLevel) {
 context.addExport("currentUrl", t_4);
 }
+output += "\n";
+var t_5;
+t_5 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"url") + "/assets/images/social-card.png";
+frame.set("ogImage", t_5, true);
+if(frame.topLevel) {
+context.setVariable("ogImage", t_5);
+}
+if(frame.topLevel) {
+context.addExport("ogImage", t_5);
+}
 output += "\n\n";
 if(runtime.contextOrFrameLookup(context, frame, "metaTitle")) {
 output += "\n  ";
-var t_5;
-t_5 = runtime.contextOrFrameLookup(context, frame, "metaTitle");
-frame.set("pageTitle", t_5, true);
+var t_6;
+t_6 = runtime.contextOrFrameLookup(context, frame, "metaTitle");
+frame.set("pageTitle", t_6, true);
 if(frame.topLevel) {
-context.setVariable("pageTitle", t_5);
+context.setVariable("pageTitle", t_6);
 }
 if(frame.topLevel) {
-context.addExport("pageTitle", t_5);
+context.addExport("pageTitle", t_6);
 }
 output += "\n";
 ;
@@ -1413,14 +1423,29 @@ output += "\n";
 output += "\n\n";
 if(runtime.contextOrFrameLookup(context, frame, "metaDesc")) {
 output += "\n  ";
-var t_6;
-t_6 = runtime.contextOrFrameLookup(context, frame, "metaDesc");
-frame.set("pageDesc", t_6, true);
+var t_7;
+t_7 = runtime.contextOrFrameLookup(context, frame, "metaDesc");
+frame.set("pageDesc", t_7, true);
 if(frame.topLevel) {
-context.setVariable("pageDesc", t_6);
+context.setVariable("pageDesc", t_7);
 }
 if(frame.topLevel) {
-context.addExport("pageDesc", t_6);
+context.addExport("pageDesc", t_7);
+}
+output += "\n";
+;
+}
+output += "\n\n";
+if(runtime.contextOrFrameLookup(context, frame, "socialImage")) {
+output += "\n  ";
+var t_8;
+t_8 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"url") + "/assets/images/" + runtime.contextOrFrameLookup(context, frame, "socialImage");
+frame.set("ogImage", t_8, true);
+if(frame.topLevel) {
+context.setVariable("ogImage", t_8);
+}
+if(frame.topLevel) {
+context.addExport("ogImage", t_8);
 }
 output += "\n";
 ;
@@ -1453,20 +1478,15 @@ output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "pa
 output += "\"/>\n";
 ;
 }
-output += "\n\n";
-if(runtime.contextOrFrameLookup(context, frame, "socialImage")) {
-output += "\n  <meta property=\"og:image\" content=\"";
-output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "socialImage"), env.opts.autoescape);
-output += "\"/>\n  <meta name=\"twitter:image\" content=\"";
-output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "socialImage"), env.opts.autoescape);
-output += "\"/>\n  <meta property=\"og:image:alt\" content=\"Page image for ";
+output += "\n\n<meta property=\"og:image\" content=\"";
+output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "ogImage"), env.opts.autoescape);
+output += "\"/>\n<meta name=\"twitter:image\" content=\"";
+output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "ogImage"), env.opts.autoescape);
+output += "\"/>\n<meta property=\"og:image:alt\" content=\"Page image for ";
 output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"name"), env.opts.autoescape);
-output += "\"/>\n  <meta name=\"twitter:image:alt\" content=\"Page image for ";
+output += "\"/>\n<meta name=\"twitter:image:alt\" content=\"Page image for ";
 output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"name"), env.opts.autoescape);
-output += "\"/>\n";
-;
-}
-output += "\n\n";
+output += "\"/>\n\n";
 if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"paymentPointer")) {
 output += "\n  <meta name=\"monetization\" content=\"";
 output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"paymentPointer"), env.opts.autoescape);
