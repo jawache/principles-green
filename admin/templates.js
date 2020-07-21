@@ -1460,7 +1460,7 @@ output += "\"/>\n<meta property=\"og:title\" content=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "pageTitle"), env.opts.autoescape);
 output += "\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta property=\"og:url\" content=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "currentUrl"), env.opts.autoescape);
-output += "\"/>\n\n";
+output += "\"/>\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n\n";
 if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"authorHandle")) {
 output += "\n  <meta name=\"twitter:creator\" content=\"@";
 output += runtime.suppressValue(env.getFilter("replace").call(context, runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"authorHandle"),"@",""), env.opts.autoescape);
