@@ -2,6 +2,7 @@
 {% set pageDesc = summary %}
 {% set siteTitle = site.name %}
 {% set currentUrl = site.url + page.url %}
+{% set ogImage = site.url + '/assets/images/social-card.png' %}
 
 {% if metaTitle %}
   {% set pageTitle = metaTitle %}
@@ -9,6 +10,10 @@
 
 {% if metaDesc %}
   {% set pageDesc = metaDesc %}
+{% endif %}
+
+{% if socialImage %}
+  {% set ogImage = site.url + '/assets/images/' + socialImage %}
 {% endif %}
 
 <title>{{ pageTitle }}</title>
@@ -29,12 +34,10 @@
   <meta property="og:description" content="{{ pageDesc }}"/>
 {% endif %}
 
-{% if socialImage %}
-  <meta property="og:image" content="{{ socialImage }}"/>
-  <meta name="twitter:image" content="{{ socialImage }}"/>
-  <meta property="og:image:alt" content="Page image for {{ site.name }}"/>
-  <meta name="twitter:image:alt" content="Page image for {{ site.name }}"/>
-{% endif %}
+<meta property="og:image" content="{{ ogImage }}"/>
+<meta name="twitter:image" content="{{ ogImage }}"/>
+<meta property="og:image:alt" content="Page image for {{ site.name }}"/>
+<meta name="twitter:image:alt" content="Page image for {{ site.name }}"/>
 
 {% if site.paymentPointer %}
   <meta name="monetization" content="{{ site.paymentPointer }}"/>
