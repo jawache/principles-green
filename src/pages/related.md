@@ -29,9 +29,6 @@ title: Related or Further Reading
 [GreenC5: An Adaptive, Energy-Aware Collection for Green Software Development](https://digitalcommons.du.edu/cgi/viewcontent.cgi?article=2122&context=etd)
 
 
-[Developing Green Software](https://software.intel.com/en-us/articles/developing-green-software)
-
-
 [The IT Energy Efficiency Imperative](https://www.thegreengrid.org/en/system/files/ITEE_White_Paper.pdf)
 
 
