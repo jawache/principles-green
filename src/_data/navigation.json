@@ -2,22 +2,32 @@
   "items": [{
       "text": "Home",
       "url": "/",
-      "external": false
+      "external": false,
+      "list": false
     },
     {
       "text": "Related",
       "url": "/pages/related/",
-      "external": false
+      "external": false,
+      "list": false
     },
     {
       "text": "Endorse the principles",
       "url": "https://go.principles.green/pledge",
-      "external": true
+      "external": true,
+      "list": false
     },
     {
       "text": "GitHub",
       "url": "https://github.com/jawache/principles-green",
-      "external": true
+      "external": true,
+      "list": false
+    },
+    {
+      "text": ["EN","FR"],
+      "url": ["/","/fr-fr"],
+      "external": false,
+      "list": true
     }
   ]
 }

@@ -43,6 +43,8 @@ A system monitoring library only works for GNU/Linux and only calculates CPU ene
 - [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget)
 Only works on Intel Core processors, only calculates power consumption due to the CPU and does not break this out on a per-process basis. 
  
+- [PowerCFG] (https://devblogs.microsoft.com/sustainable-software/measuring-your-application-power-and-carbon-impact-part-1/) A Windows 10 tool allowing to have the electrical consumption per process.
+
 A thorough analysis of the various software and hardware tools to measure energy consumption can be found in the paper [Software development methodology in a Green IT environment](https://tel.archives-ouvertes.fr/tel-01724069/document).
 
 
