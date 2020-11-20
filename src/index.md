@@ -41,7 +41,8 @@ Here are a few examples of applying the principles of sustainable software engin
 
 * [Web-Queue-Worker](principles/applied/web-queue-worker/)
 * [N-tier](principles/applied/n-tier/)
-* [Microservices](principles/applied/microservices/) 
+* [Microservices](principles/applied/microservices/)
+    * [Adopting Azure serverless architectures to help reduce CO2 emissions](https://www.linkedin.com/pulse/adopting-azure-serverless-architectures-help-reduce-co2-rakhunathan/?trackingId=fT%2Fd2HPSQjSdr6%2BLvehjYQ%3D%3D)  
 * Event-driven architecture
 * Big data
 * Big Compute

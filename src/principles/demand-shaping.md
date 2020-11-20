@@ -16,6 +16,7 @@ A great example of this is video conferencing software. Rather than streaming at
 Another example is TCP/IP. The transfer speed ramps up in response to how much data can broadcast over the wire. 
 
 A third example is progressive enhancement with the web. The web experience improves depending on the resources and bandwidth available on the end-users device. 
+[How To Measure The Power Consumption of Your Frontend](https://devblogs.microsoft.com/sustainable-software/how-to-measure-the-power-consumption-of-your-frontend-application/)
 
 Demand shaping involves two things:
 
