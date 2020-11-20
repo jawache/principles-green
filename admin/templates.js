@@ -1021,49 +1021,56 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
+if((lineno = 0, colno = 22, runtime.callWrap(runtime.memberLookup((runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "page")),"url")),"indexOf"), "page[\"url\"][\"indexOf\"]", context, ["fr-fr"])) == -1) {
+output += "\n  ";
+var t_1;
+t_1 = "";
+frame.set("language", t_1, true);
+if(frame.topLevel) {
+context.setVariable("language", t_1);
+}
+if(frame.topLevel) {
+context.addExport("language", t_1);
+}
+output += "\n";
+;
+}
+else {
+output += "\n  ";
+var t_2;
+t_2 = "fr-fr";
+frame.set("language", t_2, true);
+if(frame.topLevel) {
+context.setVariable("language", t_2);
+}
+if(frame.topLevel) {
+context.addExport("language", t_2);
+}
+output += "\n";
+;
+}
+output += "\n";
 if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "navigation")),"items")) {
 output += "\n  <nav class=\"nav\" aria-label=\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "ariaLabel"), env.opts.autoescape);
 output += "\">\n    <ul class=\"[ nav__list ] [ box-flex align-center md:space-before ]\">\n      ";
 frame = frame.push();
-var t_3 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "navigation")),"items");
-if(t_3) {t_3 = runtime.fromIterator(t_3);
-var t_2 = t_3.length;
-for(var t_1=0; t_1 < t_3.length; t_1++) {
-var t_4 = t_3[t_1];
-frame.set("item", t_4);
-frame.set("loop.index", t_1 + 1);
-frame.set("loop.index0", t_1);
-frame.set("loop.revindex", t_2 - t_1);
-frame.set("loop.revindex0", t_2 - t_1 - 1);
-frame.set("loop.first", t_1 === 0);
-frame.set("loop.last", t_1 === t_2 - 1);
-frame.set("loop.length", t_2);
+var t_5 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "navigation")),"items");
+if(t_5) {t_5 = runtime.fromIterator(t_5);
+var t_4 = t_5.length;
+for(var t_3=0; t_3 < t_5.length; t_3++) {
+var t_6 = t_5[t_3];
+frame.set("item", t_6);
+frame.set("loop.index", t_3 + 1);
+frame.set("loop.index0", t_3);
+frame.set("loop.revindex", t_4 - t_3);
+frame.set("loop.revindex0", t_4 - t_3 - 1);
+frame.set("loop.first", t_3 === 0);
+frame.set("loop.last", t_3 === t_4 - 1);
+frame.set("loop.length", t_4);
 output += "\n        ";
-var t_5;
-t_5 = "";
-frame.set("relAttribute", t_5, true);
-if(frame.topLevel) {
-context.setVariable("relAttribute", t_5);
-}
-if(frame.topLevel) {
-context.addExport("relAttribute", t_5);
-}
-output += "\n        ";
-var t_6;
-t_6 = "";
-frame.set("currentAttribute", t_6, true);
-if(frame.topLevel) {
-context.setVariable("currentAttribute", t_6);
-}
-if(frame.topLevel) {
-context.addExport("currentAttribute", t_6);
-}
-output += "\n\n        ";
-if(runtime.memberLookup((t_4),"rel")) {
-output += "\n          ";
 var t_7;
-t_7 = " rel=\"" + runtime.memberLookup((t_4),"rel") + "\"";
+t_7 = "";
 frame.set("relAttribute", t_7, true);
 if(frame.topLevel) {
 context.setVariable("relAttribute", t_7);
@@ -1072,13 +1079,8 @@ if(frame.topLevel) {
 context.addExport("relAttribute", t_7);
 }
 output += "\n        ";
-;
-}
-output += "\n\n        ";
-if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "page")),"url") == runtime.memberLookup((t_4),"url")) {
-output += "\n          ";
 var t_8;
-t_8 = " aria-current=\"page\"";
+t_8 = "";
 frame.set("currentAttribute", t_8, true);
 if(frame.topLevel) {
 context.setVariable("currentAttribute", t_8);
@@ -1086,17 +1088,76 @@ context.setVariable("currentAttribute", t_8);
 if(frame.topLevel) {
 context.addExport("currentAttribute", t_8);
 }
+output += "\n\n        ";
+if(runtime.memberLookup((t_6),"rel")) {
+output += "\n          ";
+var t_9;
+t_9 = " rel=\"" + runtime.memberLookup((t_6),"rel") + "\"";
+frame.set("relAttribute", t_9, true);
+if(frame.topLevel) {
+context.setVariable("relAttribute", t_9);
+}
+if(frame.topLevel) {
+context.addExport("relAttribute", t_9);
+}
 output += "\n        ";
 ;
 }
-output += "\n\n        <li class=\"nav__item\">\n          <a href=\"";
-output += runtime.suppressValue(runtime.memberLookup((t_4),"url"), env.opts.autoescape);
+output += "\n\n        ";
+if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "page")),"url") == runtime.memberLookup((t_6),"url")) {
+output += "\n          ";
+var t_10;
+t_10 = " aria-current=\"page\"";
+frame.set("currentAttribute", t_10, true);
+if(frame.topLevel) {
+context.setVariable("currentAttribute", t_10);
+}
+if(frame.topLevel) {
+context.addExport("currentAttribute", t_10);
+}
+output += "\n        ";
+;
+}
+output += "\n\n        ";
+if(runtime.memberLookup((t_6),"list") == false) {
+output += "\n        <li class=\"nav__item\">\n            <a href=\"";
+output += runtime.suppressValue(runtime.memberLookup((t_6),"url"), env.opts.autoescape);
 output += "\"";
 output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "relAttribute")), env.opts.autoescape);
 output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "currentAttribute")), env.opts.autoescape);
 output += ">";
-output += runtime.suppressValue(runtime.memberLookup((t_4),"text"), env.opts.autoescape);
-output += "</a>\n        </li>\n      ";
+output += runtime.suppressValue(runtime.memberLookup((t_6),"text"), env.opts.autoescape);
+output += "</a>\n        </li>\n         ";
+;
+}
+else {
+output += "\n         <li class=\"nav__item\">\n          ";
+if(runtime.contextOrFrameLookup(context, frame, "language") == "") {
+output += "\n            <a href=\"";
+output += runtime.suppressValue(runtime.memberLookup((runtime.memberLookup((t_6),"url")),1), env.opts.autoescape);
+output += "\"";
+output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "relAttribute")), env.opts.autoescape);
+output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "currentAttribute")), env.opts.autoescape);
+output += ">";
+output += runtime.suppressValue(runtime.memberLookup((runtime.memberLookup((t_6),"text")),1), env.opts.autoescape);
+output += "</a>\n          ";
+;
+}
+else {
+output += "\n            <a href=\"";
+output += runtime.suppressValue(runtime.memberLookup((runtime.memberLookup((t_6),"url")),0), env.opts.autoescape);
+output += "\"";
+output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "relAttribute")), env.opts.autoescape);
+output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "currentAttribute")), env.opts.autoescape);
+output += ">";
+output += runtime.suppressValue(runtime.memberLookup((runtime.memberLookup((t_6),"text")),0), env.opts.autoescape);
+output += "</a>\n          ";
+;
+}
+output += "\n        </li>\n         ";
+;
+}
+output += "\n      ";
 ;
 }
 }
@@ -1291,7 +1352,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<hr/>\n\n<h2 class=\"[ post-list__heading ] [ text-700 md:text-800 ]\">All Principles</h2>\n\n<div class=\"principles-list\">\n    <ol>";
+output += "<hr/>\n\n<h2 class=\"[ post-list__heading ] [ text-700 md:text-800 ]\">All Principles</h2>\n<div class=\"principles-list\">\n    <ol>";
 frame = frame.push();
 var t_3 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "collections")),"principles");
 if(t_3) {t_3 = runtime.fromIterator(t_3);
@@ -1306,7 +1367,8 @@ frame.set("loop.revindex0", t_2 - t_1 - 1);
 frame.set("loop.first", t_1 === 0);
 frame.set("loop.last", t_1 === t_2 - 1);
 frame.set("loop.length", t_2);
-output += "<li ";
+if(runtime.contextOrFrameLookup(context, frame, "language") == runtime.memberLookup((runtime.memberLookup((t_4),"data")),"language")) {
+output += "\n            <li ";
 if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "page")),"url") == runtime.memberLookup((t_4),"url")) {
 output += " class=\"active\"";
 ;
@@ -1327,7 +1389,9 @@ if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "page")),"
 output += " ◀";
 ;
 }
-output += "\n            </li>";
+output += "\n            </li>\n            ";
+;
+}
 ;
 }
 }
