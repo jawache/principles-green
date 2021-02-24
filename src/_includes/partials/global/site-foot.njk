@@ -14,10 +14,16 @@
         {% include "partials/components/nav.njk" %}
       </div>
     </div>
+
+    <p class="[ site-foot__credit ] [ pad-top-900 ]">
+      Created as a personal project by <a href="https://www.linkedin.com/in/jawache/" target="_blank">Asim Hussain</a>, Green Cloud Advocacy Lead at Microsoft. Further training based on the Principles of Green Software Engineering is available on the <a href="https://aka.ms/sse/learn" target="_blank">Microsoft Learn</a> platform.
+        </p>
+
     {% if site.showThemeCredit %}
-      <p class="[ site-foot__credit ] [ pad-top-900 ]">
+      <p class="[ site-foot__credit ] [ pad-top-300 ]">
         Powered by the <a href="https://hylia.website" rel="external">Hylia Eleventy Starter Kit v{{ pkg.version }}</a>.
-      </p>
+        </p>
+
     {% endif %}
   </div>
 </footer>
