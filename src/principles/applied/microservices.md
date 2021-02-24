@@ -1,11 +1,11 @@
 ---
 title: Microservices
-summary: Recommendations from the principles of sustainable software engineering applied to microservices
+summary: Recommendations from the principles of Green Software Engineering applied to microservices
 ---
 
 The [Microservices](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices) architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability.
 
-Applying the principles of sustainable software engineering, the following are examples of changes you can make to your microservices architecture to optimize it for sustainability.
+Applying the principles of Green Software Engineering, the following are examples of changes you can make to your microservices architecture to optimize it for sustainability.
 
 
 ## Optimize your network traffic

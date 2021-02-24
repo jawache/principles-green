@@ -18,7 +18,7 @@ By thinking of embodied carbon in this way, any device, even one that is not con
 
 ## Don't waste hardware
 
-By the time you buy a computer, it's already emitted a whole load of carbon. They also have an expiry date, computers get old, can't handle modern workloads, and need to be refreshed. If you think about it this way, hardware is then a proxy for carbon, so as Sustainable Software Engineer, we must be **hardware-efficient** if our goal is to be **carbon-efficient**.
+By the time you buy a computer, it's already emitted a whole load of carbon. They also have an expiry date, computers get old, can't handle modern workloads, and need to be refreshed. If you think about it this way, hardware is then a proxy for carbon, so as Green Software Engineer, we must be **hardware-efficient** if our goal is to be **carbon-efficient**.
 
 You can do many things to be hardware efficient, but one thing you can do is help extend the expiry date on hardware. Computers don’t wear out, there are no moving parts, they just become obsolete. They become obsolete because we are continually creating software that pushes limits.
 

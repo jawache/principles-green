@@ -23,7 +23,7 @@ Une façon de comptabiliser le carbone incorporé est d'amortir le carbone sur l
  
 Si nous ajoutons une année supplémentaire à la durée de vie de notre serveur Dell R640 2019, le carbone amorti passe de 320 kg CO<sub>2</sub>eq/an à 256 kg CO<sub>2</sub>eq/an.
 
-![alt_text](/assets/images/principles/incorporated-carbon-2.png "Carbone incorporé du même serveur amorti sur 5 ans.")
+![alt_text](/assets/images/principles/embodied-carbon-2.png "Carbone incorporé du même serveur amorti sur 5 ans.")
 
 Le matériel est mis à la retraite soit parce qu'il tombe en panne, soit parce qu'il peine à supporter les applications modernes. Les logiciels ne peuvent pas aider dans le premier cas, mais si nous nous concentrons sur la création d'applications pouvant fonctionner sur du matériel ancien, nous pouvons aider dans le second cas.
 

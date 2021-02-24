@@ -37,4 +37,4 @@ Software applications can also have eco-modes which when engaged changes applica
 
 ## Summary
 
-Demand shaping is related to a broader concept in sustainability, which is to reduce consumption. We can achieve a lot by becoming more efficient with resources, but at some point, we also just need to consume less. As Sustainable Software Engineers to be carbon-efficient means perhaps when the carbon intensity is high, instead of demand shifting compute, we consider canceling it. Reducing the demands of our application and the expectations of our end users.
+Demand shaping is related to a broader concept in sustainability, which is to reduce consumption. We can achieve a lot by becoming more efficient with resources, but at some point, we also just need to consume less. As Green Software Engineers to be carbon-efficient means perhaps when the carbon intensity is high, instead of demand shifting compute, we consider canceling it. Reducing the demands of our application and the expectations of our end users.

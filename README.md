@@ -1,6 +1,6 @@
 # Principles.Green
 
-The **Principles of Sustainable Software Engineering** are a core set of competencies needed to define, build and run sustainable software applications.
+The **Principles of Green Software Engineering** are a core set of competencies needed to define, build and run sustainable software applications.
 
 
 Update and install the web site localy:

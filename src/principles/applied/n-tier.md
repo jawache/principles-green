@@ -1,11 +1,11 @@
 ---
 title: N-Tier
-summary: Recommendations from the principles of sustainable software engineering applied to an N-Tier architecture
+summary: Recommendations from the principles of Green Software Engineering applied to an N-Tier architecture
 ---
 
 The [N-tier](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier) architecture organizes your application into distinct logical layers based on their responsibility. Layers run on a series of physically separated tiers that represent compute resources.
 
-Applying the principles of sustainable software engineering, the following are examples of changes you can make to your N-tier architecture to optimize it for sustainability.
+Applying the principles of Green Software Engineering, the following are examples of changes you can make to your N-tier architecture to optimize it for sustainability.
 
 ## Optimize your network traffic
 

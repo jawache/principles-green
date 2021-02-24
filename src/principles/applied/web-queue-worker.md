@@ -1,11 +1,11 @@
 ---
 title: Web Queue Worker
-summary: Recommendations from the principles of sustainable software engineering applied to a Web Queue Worker architecture
+summary: Recommendations from the principles of Green Software Engineering applied to a Web Queue Worker architecture
 ---
 
 The [Web-Queue-Worker](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/web-queue-worker) architecture defines a web portion that handles HTTP requests and a worker portion that handles time or processing-intensive operations. A queue is used for asynchronous communication between the web and the worker.
 
-Applying the principles of sustainable software engineering, the following are examples of changes you can make to your Web-Queue-Worker architecture to optimize it for sustainability.
+Applying the principles of Green Software Engineering, the following are examples of changes you can make to your Web-Queue-Worker architecture to optimize it for sustainability.
 
 ## Optimize your network traffic
 
