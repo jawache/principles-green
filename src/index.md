@@ -29,11 +29,25 @@ Anyone building, deploying or managing applications.
 1. [Carbon](principles/carbon/): Build applications that are carbon efficient.
 2. [Electricity](principles/electricity/): Build applications that are energy efficient.
 3. [Carbon Intensity](principles/carbon-intensity/): Consume electricity with the lowest carbon intensity.
-4. [Embodied Carbon](principles/embodied-carbon/): Build applications that run on older hardware.
-5. [Energy Proportionality](principles/energy-proportionality/): Run servers at a high rate of utilization.
+4. [Embodied Carbon](principles/embodied-carbon/): Build applications that are hardware efficient.
+5. [Energy Proportionality](principles/energy-proportionality/): Maximize the energy efficiency of hardware.
 6. [Networking](principles/networking/): Reduce the amount of data and distance it must travel across the network.
-7. [Demand Shaping](principles/demand-shaping/): Instead of shaping supply to meet demand, try shaping demand to match supply.
-8. [Measurement & Optimization](principles/measurement/): Focus on end-to-end optimizations that increase the overall carbon efficiency.
+7. [Demand Shaping](principles/demand-shaping/): Build carbon-aware applications.
+8. [Measurement & Optimization](principles/measurement/): Focus on step-by-step optimizations that increase the overall carbon efficiency.
+
+Alongside the eight principles of Sustainable Software Engineering, there are two philosophies.
+
+### Everyone has a part to play in the climate solution.
+
+If you are reading this document and identify as Green, know you are part of a massive global movement of people who care and are taking action. Greens work in every discipline across engineering, from designing silicon to designing user experiences.
+
+Nothing happens in isolation, everything is connected, and small changes lead to big changes. Even the act of normalizing a discussion about sustainability in technical meetings will empower others to raise their voice. That’s how you create change in any organization.
+
+As Sustainable Software Engineers, we believe that everyone has a part to play in the climate solution. Sustainable Software Engineering is inclusive. Whatever sector, industry, role, technology – there is always something you can do to have an impact.
+
+### Sustainability is enough, all by itself, to justify our work.
+
+As Sustainable Software Engineers, we recognize there are many advantages to building sustainable applications. They are almost always cheaper, they are often more performant, they are often more resilient. But the primary reason we are practicing Sustainable Software Engineering is for sustainability, everything else is an added advantage. 
 
 ## Applying the principles
 
@@ -42,14 +56,3 @@ Here are a few examples of applying the principles of sustainable software engin
 * [Web-Queue-Worker](principles/applied/web-queue-worker/)
 * [N-tier](principles/applied/n-tier/)
 * [Microservices](principles/applied/microservices/)
-    * [Adopting Azure serverless architectures to help reduce CO2 emissions](https://www.linkedin.com/pulse/adopting-azure-serverless-architectures-help-reduce-co2-rakhunathan/?trackingId=fT%2Fd2HPSQjSdr6%2BLvehjYQ%3D%3D)  
-* Event-driven architecture
-* Big data
-* Big Compute
- 
-Here are a few examples of applying the principles of sustainable software engineering to some common infrastructure patterns:
- 
-* Virtualized servers
-* IAAS
-* PAAS
-* Databases

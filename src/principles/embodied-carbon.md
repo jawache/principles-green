@@ -1,6 +1,6 @@
 ---
 title: Embodied Carbon
-summary: Build applications that run on older hardware
+summary: Build applications that are hardware efficient
 order: 4
 tags: principle
 ---
@@ -15,6 +15,14 @@ For example, a [2019 R640 Dell Server](https://i.dell.com/sites/csdocuments/Corp
 > Therefore the total carbon cost is going to be 320 + (0.276 * 1760.3) = 805 kg of carbon/year of which 320 kg or about *40% is from the embodied carbon*. Embodied carbon is a significant contributor to the total emitted carbon of hardware.
 
 By thinking of embodied carbon in this way, any device, even one that is not consuming electricity, is effectively releasing carbon over its lifetime.
+
+## Don't waste hardware
+
+By the time you buy a computer, it's already emitted a whole load of carbon. They also have an expiry date, computers get old, can't handle modern workloads, and need to be refreshed. If you think about it this way, hardware is then a proxy for carbon, so as Sustainable Software Engineer, we must be **hardware-efficient** if our goal is to be **carbon-efficient**.
+
+You can do many things to be hardware efficient, but one thing you can do is help extend the expiry date on hardware. Computers don’t wear out, there are no moving parts, they just become obsolete. They become obsolete because we are continually creating software that pushes limits.
+
+## Extending the lifespan of hardware
 
 A way to account for embodied carbon is to amortize the carbon over the expected life span of a device. For example, if it took 4 tons of carbon to build a server and we expect the server to have a 4-year lifespan, we can consider this equivalent to 1 ton of carbon being released per year during its lifespan.
 

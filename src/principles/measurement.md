@@ -1,21 +1,23 @@
 ---
 title: Measurement & Optimization
-summary: Focus on end-to-end optimizations that increase the overall carbon efficiency
+summary: Focus on step-by-step optimizations that increase the overall carbon efficiency 
 order: 8
 tags: principle
 ---
 
-You must understand the carbon efficiency of all parts of your application in order to understand where effort should be prioritized. For example, is it worthwhile to spend two weeks reducing megabytes from network communication if the database queries are causing ten times more carbon to be emitted?
+Sustainability isn't one optimization, it's thousands. One piece of advice is to look end-to-end and take it step by step. Often putting in the effort to understand the full stack, from user experience to data center design or electricity grids yield simple solutions that significantly improve carbon efficiency.
 
-The most impactful optimizations will come from those responsible for developing and running applications understanding the carbon pollution of an application across the full stack, from the front-end to the data center. 
+Weigh up the effort required to decarbonize vs. the potential rewards. Just like the broader global sustainability movement, some sectors will be harder to decarbonize than others. In computing, some application domains will be harder to decarbonize than others. Some parts of your application architecture will be harder to decarbonize than others.
 
-A key to success in optimization is to choose a measurement criterion which will give clear signals as to where best to put optimization efforts.
+The key to success in optimization is to choose a measurement criterion that will give clear signals as to where best to put optimization efforts. For example, is it worthwhile to spend two weeks reducing megabytes from network communication if the database queries cause 10 times more carbon to be emitted?
+
+Rarely, can we directly measure our application's carbon cost, but if we follow a resource chain down and it eventually has a link to carbon emissions, then that is a good proxy for carbon.
 
 ## Carbon
 
 Measuring emitted carbon is a complex challenge, with parts of the stack that need to be estimated rather than measured, but with some effort, it’s possible.
 
-Because of the variability of carbon intensity and other dependencies, the total carbon emitted may change depending on the time of day or region the application is run. 
+Because of the variability of carbon intensity and other dependencies, the total carbon emitted may change depending on the time of day or region the application is run.
 
 The same application measured at *different times* will result in different amounts of carbon. This could be a good signal, especially if you are open to demand-shifting workloads or it could be noise if you are focussing on energy optimizations.
 
