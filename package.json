@@ -14,7 +14,8 @@
     "json-to-scss": "^1.5.0",
     "sass": "^1.26.3",
     "semver": "^6.3.0",
-    "slugify": "^1.4.0"
+    "slugify": "^1.4.0",
+    "stalfos": "github:jawache/stalfos#aeef4455e27e95fc9d7ee28f5ad453ae5ea1ada1"
   },
   "devDependencies": {
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
