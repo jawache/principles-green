@@ -1619,11 +1619,11 @@ output += result;
 callback(null);
 });
 env.waterfall(tasks, function(){
-output += "\n      </div>\n    </div>\n    ";
+output += "\n      </div>\n    </div>\n\n    <p class=\"[ site-foot__credit ] [ pad-top-900 ]\">\n      A personal project by <a href=\"https://www.linkedin.com/in/jawache/\" target=\"_blank\">Asim Hussain</a>, Green Cloud Advocacy Lead at Microsoft. Further training based on the Principles of Green Software Engineering is available on the <a href=\"https://aka.ms/sse/learn\" target=\"_blank\">Microsoft Learn</a> platform.\n        </p>\n\n    ";
 if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "site")),"showThemeCredit")) {
-output += "\n      <p class=\"[ site-foot__credit ] [ pad-top-900 ]\">\n        Powered by the <a href=\"https://hylia.website\" rel=\"external\">Hylia Eleventy Starter Kit v";
+output += "\n      <p class=\"[ site-foot__credit ] [ pad-top-300 ]\">\n        Powered by the <a href=\"https://hylia.website\" rel=\"external\">Hylia Eleventy Starter Kit v";
 output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "pkg")),"version"), env.opts.autoescape);
-output += "</a>.\n      </p>\n    ";
+output += "</a>.\n        </p>\n\n    ";
 ;
 }
 output += "\n  </div>\n</footer>";
