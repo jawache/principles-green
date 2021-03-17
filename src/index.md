@@ -6,7 +6,7 @@ showCTAButtons: yes
 ---
 # Introduction
 
-**Green Software Engineering** is an emerging discipline at the intersection of climate science, software practices and architecture, electricity markets, hardware and data centre design. 
+**Green Software Engineering** is an emerging discipline at the intersection of climate science, software practices and architecture, electricity markets, hardware and data center design. 
 
 The **Principles of Green Software Engineering** are a core set of competencies needed to define, build and run green sustainable software applications. 
 
