@@ -1,62 +1,55 @@
 ---
-title: Microservices
+title: Microservicios
 summary: Recommendations from the principles of Green Software Engineering applied to microservices
+language: es
 ---
 
-The [Microservices](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices) architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability.
+La arquitectura de [Microservicios](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices) consiste en una colección de servicios pequeños y autónomos. Cada servicio es auto-contenido y debería implementar sólo una capacidad del negocio.
 
 Applying the principles of Green Software Engineering, the following are examples of changes you can make to your microservices architecture to optimize it for sustainability.
 
+## Optimizar el tráfico de su red
 
-## Optimize your network traffic
-
-Reduce the amount of traffic your architecture creates per operation as well as the distance each request and response travels.
+Reducir la cantidad de tráfico que su arquitectura crea por cada operación así como la distancia que cada petición y respuesta recorren.
 
 * Consider using caching headers, which allows browser caches and proxy caches to have enough information to confidently cache static assets. Caching static assets at the browser or proxy level allows future requests for those assets to be handled by those caches and reduces network traffic to your application.
-* Consider using a CDN to distribute your application's static assets closer to the source of a request. This distribution of assets reduces the distance all requests for static assets has to travel over the network.
-* Where possible, reduce the size and optimize your bundles and static assets.
-    * Consider using compression and decompression for data you transmit over the network. Compression and decompression is usually takes less overall energy than transmitting uncompressed data over the network.
+* Considere usar un CDN para distribuir los archivos estáticos de su aplicación a un lugar más cercano a la fuente de la petición. Esta distribución de archivos reduce la distancia en la red que los archivos estáticos deben recorrer para todas las peticiones.
+* Cuando sea posible, reduce el tamaño y optimiza los paquetes y los archivos estáticos.
+* Considere usar compresión y descompresión para los datos que transmite por la red. La compresión y descompresión generalmente requieren menos energía en total que transmitir datos no comprimidos por la red.
 
+## Incremente su utilización de cómputo
 
-## Increase your compute utilization
+Actualice la distribución de su carga de trabajo y sus recursos de cómputo para usar menos recursos con una utilización más alta. Esto reduce la cantidad de energía que sus recursos de cómputo necesitan en un estado inactivo o utilizando energía sin hacer trabajo.
 
-Update your workload distribution and compute resources so that you use less resources at a higher utilization. This reduces the amount of energy your compute resources spend in an idle state, or using energy without doing work.
-
-* If using virtual machines for compute resources and they have low utilization, consider reducing the size of those virtual machines to increase utilization. Smaller virtual machines with higher utilization usually use less energy than larger virtual machines with lower utilization given the same workload.
-* Evaluate migrating your workload to a PaaS where possible. Typically, PaaS solutions are sized more appropriately for their workload and can run those workloads at a high utilization on their underlying compute resources.
+* Si usa máquinas virtuales y estas tienen baja utilización, considere reducir el tamaño de esas máquinas virtuales para incrementar su utilización. Máquinas virtuales más pequeñas con mayor utilización usualmente requieren menos energía que máquinas virtuales más grandes con utilización más baja, dada la misma carga de trabajo.
+* Evalúe migrar sus cargas de trabajo a PaaS cuando sea posible. Usualmente, las soluciones PaaS están dimensionadas más apropiadamente a su carga de trabajo y pueden correrlas con una alta utilización de los recursos subyacentes.
 * Consider using auto-scaling or burst capabilities for your compute resources over statically allocating compute resources for maximum capacity at all times. These capabilities allow you to increase and decrease your compute resources based on demand while keeping the utilization high on those compute resources.
 * If you have many logical layers in a physical tier, consider increasing your physical tiers and reorganizing where your logical layers run. The increased physical tiers with a more granular organization of logical layers allows you more flexibility to scale the logical layers independently. This flexibility allows you to keep utilization high on your compute resources and avoid idle logical layers.
 
-## Reduce your number of microservices
+## Reducir el número de sus microservicios
 
-A microservices architecture is an effective way to focus a service around a specific business domain and decentralize ownership and knowledge throughout the team or system. Ensuring the appropriate level of abstraction is important to help limit network congestion, latency, and overall complexity. 
+Una arquitectura de microservicios es una manera efectiva de enfocar un servicio alrededor de un dominio específico del negocio y repartir responsabilidad y conocimiento entre el equipo o sistema. Asegurar el nivel apropiado de abstracción es importante para ayudar a limitar la congestion, latencia y complejidad de la red.
 
-* Consider combining services, logically or physically, where similar scale points exist to reduce the footprint of the overall architecture.
-* If two or more microservices are highly coupled, consider co-locating to reduce network congestion and latency.  
-* Use languages and technology stacks that optimize the efficiency of a specific microservices function. The independence and abstraction of functionality to an API layer means you are free to make the technical decisions that maximize utlization in your technical stack for each microservice. 
-* Consider running any resource-intensive microservices in a region with a lower carbon intensity. 
+* Considere combinar servicios, física o lógicalmente, cuando existan puntos de escalamiento similares para reducir el impacto de la arquitectura en general.
+* Si dos o más microservicios están áltamente acoplados, considere co-situarlos para reducir la latencia y la congestión de la red.
+* Utilice lenguajes y componentes tecnológicos que optimicen la eficiencia de un función específica de los microservicios. La independencia y abstracción de funcionalidad de la capa de la API significa que usted está libre de tomar decisiones técnicas que maximizen la utilización de los componentes por cada microservicio.
+* Considere ejecutar los microservicios que requieren muchos recursos en regiones con una intensidad de carbono menor.
 
+## Optimizar su base de datos
 
-## Optimize your database
+Optimizar cuál base de datos utiliza así como cuántos datos se guardan puede reducir la energía utilizada para mantener corriendo la base de datos así como reducir el tiempo de espera para que las consultas se completen.
 
-Optimizing which database you use as well as how the data is stored can reduce the energy used to run the database as well decrease idle time waiting for queries to complete.
+* Asegúrese de usar la mejor base de datos para interactuar con su set de datos. Por ejemplo, si está ejecutando consultas relacionales en su set de datos, usar una base de datos relacional es más adecuado y seguramente más eficiente que una base de datos NoSQL.
+* Si ninguna base de datos individual está diseñada para manejar todas las maneras en las que interactua con su set de datos, considere tener copias redundantes de sus datos en diferentes bases de datos y usar cada una para el subconjunto de interacciones más adecuado para esa base de datos.
+* Considere usar índices si su base de datos lo permite.
+* Considere evaluar y optimizar sus consultas.
+* Considere usar caché para bases de datos. En algunos casos, el caché puede reducir consultas redundantes a la base de datos y reducir la energía usada por la base de datos, especialmente para consultas complejas o intensivas.
 
-* Ensure you are using the best database for interacting with your data set. For example, if you are running many relational queries on your data set, a relational database is better suited and likely more efficient to use than NoSQL database.
-* If no single database is designed to handle all the ways you interact with you data set, consider keeping redundant copies of your data in different databases and using each database for the subset of interactions best suited for that database.
-* Consider using index if your database offers it.
-* Consider evaluating and optimizing your queries.
-* Consider using a database cache. In some cases, caching can reduce redundant queries to the database and decrease energy usage by the database, especially for complex or compute-intensive queries.
+## Entender los límites de su latencia
 
+En muchos casos, las aplicaciones web están diseñadas por defecto con expectativas de latencia muy baja, asumiendo que una respuesta a una petición debería ocurrir inmediatamente o tan pronto como sea posible. Esta suposición puede limitar sus opciones para reducir el uso de energía de su aplicación. Considere evaluar cómo su aplicación es utilizada y si puede suavizar los límites de latencia en algunas áreas, lo cual puede incrementar sus opciones para reducir el carbono.
 
-## Understand your latency limits
-
-In many cases, web applications are designed by default with very low latency expectations, assuming a response to a request should happen immediately or as soon as possible. This assumption can limit your options for reducing the energy usage in your application. Consider evaluating how your application is used and if you can relax the latency limits in some areas, which can increase your options for reducing carbon.
-
-* Consider separating certain operations outside of the request/response cycle. For example, if there is a request to send an email that blocks the response until the email is sent, you can instead asynchronously send the email using a worker process and unblock the response.
+* Considere separar ciertas operaciones fuera del ciclo de petición/respuesta. Por ejemplo, si se hace una petición para enviar un correo electrónico que bloquea la respuesta hasta que el correo electrónico es enviado, en su lugar puede enviar el correo electrónico de manera asíncrona usando un proceso alterno, desbloqueando la respuesta.
 * Consider running worker processes a lower priority than web process. This prioritization allows worker processes to run only when compute resources are not needed by web processes and keeps utilization high.
 * Consider running the worker processes in a region with lower carbon intensity.
 * Consider delaying worker process to run when the carbon intensity is the lowest.
-
-
-
-

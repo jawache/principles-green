@@ -5,8 +5,8 @@ order: 4
 tags: principle
 language: es
 ---
-El dispositivo en el que estás leyendo este documento liberó algo de carbono en su creación, una vez que alcanza el fin de su vida útil desecharlo podría producir más.
-El carbono incorporado es la cantidad de contaminación por carbono emitida durante la creación y desecho de un dispositivo. Para calcular la contaminación por carbono de las computadoras corriendo tu software, toma en cuenta tanto la contaminación por correr la computadora como el carbono incorporado de la computadora.
+El dispositivo en el que está leyendo este documento liberó algo de carbono en su creación, una vez que alcanza el fin de su vida útil desecharlo podría producir más.
+El carbono incorporado es la cantidad de contaminación por carbono emitida durante la creación y desecho de un dispositivo. Para calcular la contaminación por carbono de las computadoras corriendo su software, tome en cuenta tanto la contaminación por correr la computadora como el carbono incorporado de la computadora.
 
 Dependiendo de la intensidad de carbono de la mezcla de energía, el costo de carbono incorporado de un dispositivo puede llegar a ser *significante* comparado al costo de la electricidad que lo mantiene funcionando.
 
@@ -18,7 +18,7 @@ Al pensar en el carbono incorporado en esta manera, cualquier dispositivo, inclu
 
 ## No desperdiciando hardware
 
-Para el momento de adquirir una computadora, ya emitió mucho carbono. Ellas también tienen una fecha de expiración, las computadoras se hacen viejas, no pueden manejar los trabajos actuales, y necesitan se actualizadas. Si se ve de esta manera, el hardware es un representante del carbono, así que como un Ingeniero de Software Verde, es necesario es **eficiente con el hardware** si nuestra meta es ser **eficiente con el carbono**.
+Para el momento de adquirir una computadora, esta ya emitió mucho carbono. Ellas también tienen una fecha de expiración, las computadoras se hacen viejas, no pueden manejar los trabajos actuales, y necesitan ser actualizadas. Si se ve de esta manera, el hardware es un representante del carbono, así que como un Ingeniero de Software Verde, es necesario ser **eficiente con el hardware** si nuestra meta es ser **eficiente con el carbono**.
 
 Se pueden hacer muchas cosas para ser eficiente con el hardware, pero una cosa que se puede hacer es ayudar a extender la fecha de expiración en el hardware. Las computadoras no se gastan, no tienen partes móbiles, sólo se vuelven obsoletas. Se vuelven obsoletas porque continuamente estamos creando software que reta los límites.
 
@@ -30,6 +30,6 @@ Una manera de considerar el carbono incorporado es amortizando el carbono sobre 
 
 Si tan sólo añadimos un año a la vida útil de nuestro servidor Dell R640 2019, el carbono amortizado disminuye desde 320kg CO<sub>2</sub>eq/año hasta 256 kg CO<sub>2</sub>eq/año.
 
-![alt_text](/assets/images/principles/embodied-carbon-2.png "Carbon incorporado del mismo servidor amortizado sobre 5 años.")
+![alt_text](/assets/images/principles/embodied-carbon-2.png "Carbono incorporado del mismo servidor amortizado sobre 5 años.")
 
-El hardware es retirado ya sea porque se descompone o porque se le dificulta manejar las cargas de trabajo actuales. El software no puede ayudar con el primer punto, pero si podemos construir aplicaciones que puedan correr en hardware más antiguo, podemos ayudar con el segundo.
+El hardware es retirado ya sea porque se descompone o porque se le dificulta manejar las cargas de trabajo actuales. El software no puede ayudar con el primer punto, pero si acaso podemos construir aplicaciones que puedan correr en hardware más antiguo, podemos ayudar con el segundo punto.

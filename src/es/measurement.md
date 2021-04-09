@@ -1,66 +1,63 @@
 ---
-title: Measurement & Optimization
-summary: Focus on step-by-step optimizations that increase the overall carbon efficiency 
+title: Medición y optimización
+summary: Enfocándose en optimizaciones paso a paso que incrementan la eficiencia de carbono en general
 order: 8
 tags: principle
+language: es
 ---
 
-Sustainability isn't one optimization, it's thousands. One piece of advice is to look end-to-end and take it step by step. Often putting in the effort to understand the full stack, from user experience to data center design or electricity grids yield simple solutions that significantly improve carbon efficiency.
+La sustentabilidad no es una optimización, son miles. Un buen consejo es verlo de principio a fin y tomarlo paso a paso. Normalmente esforzándose en entender todos los componentes, desde la experiencia del usuario hasta el diseño del centro de datos o la red eléctrica, produce soluciones que mejoran la eficiencia de carbono significativamente.
 
-Weigh up the effort required to decarbonize vs. the potential rewards. Just like the broader global sustainability movement, some sectors will be harder to decarbonize than others. In computing, some application domains will be harder to decarbonize than others. Some parts of your application architecture will be harder to decarbonize than others.
+Considere el esfuerzo necesario para eliminar el carbono contra las potenciales recompensas. Justo como cualquier otro movimiento de sustentabilidad global, será más difícil eliminar el carbono de algunos sectores que de otros. En el cómputo, algunos dominios de aplicaciones serán más difíciles de limpiar que otros. Algunas partes de la arquitectura de tu aplicación serán más difíciles de limpiar que otros.
 
-The key to success in optimization is to choose a measurement criterion that will give clear signals as to where best to put optimization efforts. For example, is it worthwhile to spend two weeks reducing megabytes from network communication if the database queries cause 10 times more carbon to be emitted?
+La clave para el éxito en la optimización es elegir un criterio para la medición que resultará en señales claras sobre donde esforzarnos en la optimización. Por ejemplo, ¿es buena idea invertir dos semanas en reducir megabytes en comunicación de la red si las consultas a la base de datos resultan en 10 veces más carbono emitido?
 
-Rarely, can we directly measure our application's carbon cost, but if we follow a resource chain down and it eventually has a link to carbon emissions, then that is a good proxy for carbon.
+Es muy poco común que podamos medir directamente el costo de carbono de una aplicación, pero siguiendo la cadena de recursos eventualmente podremos relacionarla a las emisiones de carbono, las cuales son una buena aproximación para el carbono.
 
-## Carbon
+## Carbono
 
-Measuring emitted carbon is a complex challenge, with parts of the stack that need to be estimated rather than measured, but with some effort, it’s possible.
+Medir el carbono incorporado es un reto complejo, con componentes que necesitan ser estimados en lugar de ser medidas, pero con algo de esfuerzo, es posible.
 
-Because of the variability of carbon intensity and other dependencies, the total carbon emitted may change depending on the time of day or region the application is run.
+Debido a la variabilidad de la intensidad del carbono y otras dependencias, el carbono total emitido puede cambiar dependiendo de la hora del día o de la región en la que la aplicación es ejecutada.
 
-The same application measured at *different times* will result in different amounts of carbon. This could be a good signal, especially if you are open to demand-shifting workloads or it could be noise if you are focussing on energy optimizations.
+La misma aplicación medida en *diferentes horas* resultará en diferentes cantidades de carbono. Esto puede ser una buena señal, especialmente si existe la posibilidad de cambiar las cargas de trabajo de acuerdo a la demanda o podría ser únicamente ruido si el objetivo es optimizar el consumo de energía.
 
+## Energía
 
-## Energy
+La energía consumida por tu aplicación puede variar cada vez que corre, esto puede ser algo que puedas tomar como una señal de optimización, o puede ser algo que deba controlarse.
 
-The energy consumed by your application may vary every time it runs, this may be something you want to take as an optimization signal, or this may be something you want to control for.
+La misma aplicación corriendo en **diferente hardware** puede resultar en diferentes cantidades de energía consumida debido a las diferencias en la eficiencia de energía de los componentes del hardware.
 
-The same application run on **different hardware** may result in different amounts of energy consumed because of the differences in energy efficiency between the hardware components.
+Debido al principio de proporcionalidad de la energía, la misma aplicación corriendo en el mismo hardware pero **en otro momento** podría resultar en diferentes cantidades de energía consumida ya que la utilización del hardware es diferente entre las dos ejecuciones. Esto es, el hardware podría estar corriendo otras aplicaciones durante la segunda ejecución, y esto cambiaría la eficiencia de energía total del hardware.
 
-Because of the energy proportionality principle, the same application run on the same hardware but at **different times** may result in different amounts of energy consumed because the utilization of the hardware is different between the two runs. That is, the hardware might be running other applications during the second run, and this changes the hardware’s overall energy efficiency.
+En general, crear aplicaciones que consuman menos electricidad pero con el mismo rendimiento y resultados percibibles es una buena estrategía para reducir el carbono.
 
-Overall, though, creating applications that consume less electricity for the same human-perceptible performance and output is a good proxy for carbon reduction.
+Existen dispositivos, herramientas y bibliotecas disponibles que pueden ayudar a medir la energía consumida por una aplicación.
 
-There are devices, tools and libraries available that help you measure the energy consumed by an application.
+- [Joulemeter (depreciada)](https://www.microsoft.com/en-us/research/project/joulemeter-computational-energy-measurement-and-optimization/)
+Estima el consumo de energía global del CPU, memoría y disco. Sin embargo, por cada aplicación sólo guardar la energía del CPU.
 
-- [Joulemeter (depreciated)](https://www.microsoft.com/en-us/research/project/joulemeter-computational-energy-measurement-and-optimization/) 
-Estimates the power consumption globally from the CPU, memory and disk however for a single application only stores the energy from the CPU. 
-
- 
 - [PowerAPI](http://powerapi.org/)
-A system monitoring library only works for GNU/Linux and only calculates CPU energy, it does, however, calculate the energy used per process. 
+Una biblioteca de monitoreo de sistema, únicamente funciona con GNU/Linux y sólo calcula la enegría del CPU, sin embargo, si calcula la enegía utilizada por cada proceso.
 
- 
 - [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget)
-Only works on Intel Core processors, only calculates power consumption due to the CPU and does not break this out on a per-process basis. 
- 
-- [PowerCFG](https://devblogs.microsoft.com/sustainable-software/measuring-your-application-power-and-carbon-impact-part-1/) A Windows 10 tool allowing to have the electrical consumption per process.
+Sólo funciona en procesadores Intel Core, únicamente calcula el consumo de energía del CPU y no separa esto en el consumo por cada proceso.
 
-A thorough analysis of the various software and hardware tools to measure energy consumption can be found in the paper [Software development methodology in a Green IT environment](https://tel.archives-ouvertes.fr/tel-01724069/document).
+- [PowerCFG](https://devblogs.microsoft.com/sustainable-software/measuring-your-application-power-and-carbon-impact-part-1/)
+Una herramienta para Windows 10 que permite obtener el consumo eléctrico por proceso.
 
+Un análisis profundo de algunas herramientas de software y hardware utilizadas para medir el consumo de energía puede ser encontrada en el documento [Software development methodology in a Green IT environment](https://tel.archives-ouvertes.fr/tel-01724069/document).
 
-## Cost
+## Costo
 
-At some point, the cost of electricity is factored into _most_ services. Building applications that run as cheaply as possible is usually a good proxy for applications that emit less carbon.
+En algún punto, el costo de la electricidad está factorizado en la _mayoría_ de los servicios. Construir aplicaciones que corren tan barato como sea posible es usualmente un buen acercamiento a aplicaciones que emiten menos carbono.
 
 ## Networking
 
-The cost of electricity in networking is often not considered. The number of services that offer unlimited bandwidth for a single price means there is little price pressure to reduce bandwidth.  
+El costo de la electricidad en las redes no es considerado comunmente. El número de servicios que ofrecen ancho de banda ilimitado por un único precio significa que hay poca presión para reducir el ancho de banda.
 
-Measuring and then reducing the amount and distance your data must travel is a good proxy for reducing carbon.
+Medir y después reducir la cantidad y distacia que los datos deben recorrer es un buen enfoque para reducir el carbono.
 
-## Performance
+## Rendimiento
 
-If you can architect an application that performs better **for the same level of utilization**, then this is likely to reduce overall carbon.
-
+Si se puede diseñar una aplicación que funcione mejor **con el mismo nivel de utilización** entonces es probable que reduzca el monto total de carbono.
