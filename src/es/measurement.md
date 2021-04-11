@@ -16,15 +16,15 @@ Es muy poco común que podamos medir directamente el costo de carbono de una apl
 
 ## Carbono
 
-Medir el carbono incorporado es un reto complejo, con componentes que necesitan ser estimados en lugar de ser medidas, pero con algo de esfuerzo, es posible.
+Medir el carbono incorporado es un reto complejo, con componentes que necesitan ser estimados en lugar de ser medidos, pero con algo de esfuerzo, es posible.
 
 Debido a la variabilidad de la intensidad del carbono y otras dependencias, el carbono total emitido puede cambiar dependiendo de la hora del día o de la región en la que la aplicación es ejecutada.
 
-La misma aplicación medida en *diferentes horas* resultará en diferentes cantidades de carbono. Esto puede ser una buena señal, especialmente si existe la posibilidad de cambiar las cargas de trabajo de acuerdo a la demanda o podría ser únicamente ruido si el objetivo es optimizar el consumo de energía.
+La misma aplicación medida en *diferentes momentos* resultará en diferentes cantidades de carbono. Esto puede ser una buena señal, especialmente si existe la posibilidad de cambiar las cargas de trabajo de acuerdo a la demanda o podría ser únicamente ruido si el objetivo es optimizar el consumo de energía.
 
 ## Energía
 
-La energía consumida por tu aplicación puede variar cada vez que corre, esto puede ser algo que puedas tomar como una señal de optimización, o puede ser algo que deba controlarse.
+La energía consumida por tu aplicación puede variar cada vez que corre, esto puede ser algo que se pueda tomar como una señal de optimización, o puede ser algo que deba controlarse.
 
 La misma aplicación corriendo en **diferente hardware** puede resultar en diferentes cantidades de energía consumida debido a las diferencias en la eficiencia de energía de los componentes del hardware.
 
