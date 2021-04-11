@@ -30,15 +30,15 @@ La misma aplicación corriendo en **diferente hardware** puede resultar en difer
 
 Debido al principio de proporcionalidad de la energía, la misma aplicación corriendo en el mismo hardware pero **en otro momento** podría resultar en diferentes cantidades de energía consumida ya que la utilización del hardware es diferente entre las dos ejecuciones. Esto es, el hardware podría estar corriendo otras aplicaciones durante la segunda ejecución, y esto cambiaría la eficiencia de energía total del hardware.
 
-En general, crear aplicaciones que consuman menos electricidad pero con el mismo rendimiento y resultados percibibles es una buena estrategía para reducir el carbono.
+En general, crear aplicaciones que consuman menos electricidad pero con el mismo rendimiento y resultados perceptibles es una buena estrategia para reducir el carbono.
 
 Existen dispositivos, herramientas y bibliotecas disponibles que pueden ayudar a medir la energía consumida por una aplicación.
 
 - [Joulemeter (depreciada)](https://www.microsoft.com/en-us/research/project/joulemeter-computational-energy-measurement-and-optimization/)
-Estima el consumo de energía global del CPU, memoría y disco. Sin embargo, por cada aplicación sólo guardar la energía del CPU.
+Estima el consumo de energía global del CPU, memoria y disco. Sin embargo, por cada aplicación sólo guardar la energía del CPU.
 
 - [PowerAPI](http://powerapi.org/)
-Una biblioteca de monitoreo de sistema, únicamente funciona con GNU/Linux y sólo calcula la enegría del CPU, sin embargo, si calcula la enegía utilizada por cada proceso.
+Una biblioteca de monitoreo de sistema, únicamente funciona con GNU/Linux y sólo calcula la energía del CPU, sin embargo, si calcula la energía utilizada por cada proceso.
 
 - [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget)
 Sólo funciona en procesadores Intel Core, únicamente calcula el consumo de energía del CPU y no separa esto en el consumo por cada proceso.
@@ -54,9 +54,9 @@ En algún punto, el costo de la electricidad está factorizado en la _mayoría_ 
 
 ## Networking
 
-El costo de la electricidad en las redes no es considerado comunmente. El número de servicios que ofrecen ancho de banda ilimitado por un único precio significa que hay poca presión para reducir el ancho de banda.
+El costo de la electricidad en las redes no es considerado comúnmente. El número de servicios que ofrecen ancho de banda ilimitado por un único precio significa que hay poca presión para reducir el ancho de banda.
 
-Medir y después reducir la cantidad y distacia que los datos deben recorrer es un buen enfoque para reducir el carbono.
+Medir y después reducir la cantidad y distancia que los datos deben recorrer es un buen enfoque para reducir el carbono.
 
 ## Rendimiento
 

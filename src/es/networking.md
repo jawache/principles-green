@@ -6,9 +6,9 @@ tags: principle
 language: es
 ---
 
-Una red es una serie de switches, ruteadores y servidores. Todas las computadoras y el equipo de redes en una red consumen electricidad y tienen carbono incorporado. Internet es una red global de dispositivos que comunmente dependen de la combinación estándar de energía de la red local o de renovables.
+Una red es una serie de switches, ruteadores y servidores. Todas las computadoras y el equipo de redes en una red consumen electricidad y tienen carbono incorporado. Internet es una red global de dispositivos que comúnmente dependen de la combinación estándar de energía de la red local o de renovables.
 
-Cuando se envían datos a través de internet, se están enviando datos a través de muchos dispositivos en la red, cada uno de esos dispositivos consume electricidad. Como resultado, **cualquier dato que se envíe o recibe de internet, emite carbono**.
+Cuando se envían datos a través de Internet, se están enviando datos a través de muchos dispositivos en la red, cada uno de esos dispositivos consume electricidad. Como resultado, **cualquier dato que se envíe o recibe de Internet, emite carbono**.
 
 ![alt_text](/assets/images/principles/networking-1.png "Los nodos de una red corren con diferentes combinaciones de energía.")
 

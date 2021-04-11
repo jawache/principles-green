@@ -20,7 +20,7 @@ Al pensar en el carbono incorporado en esta manera, cualquier dispositivo, inclu
 
 Para el momento de adquirir una computadora, esta ya emitió mucho carbono. Ellas también tienen una fecha de expiración, las computadoras se hacen viejas, no pueden manejar los trabajos actuales, y necesitan ser actualizadas. Si se ve de esta manera, el hardware es un representante del carbono, así que como un Ingeniero de Software Verde, es necesario ser **eficiente con el hardware** si nuestra meta es ser **eficiente con el carbono**.
 
-Se pueden hacer muchas cosas para ser eficiente con el hardware, pero una cosa que se puede hacer es ayudar a extender la fecha de expiración en el hardware. Las computadoras no se gastan, no tienen partes móbiles, sólo se vuelven obsoletas. Se vuelven obsoletas porque continuamente estamos creando software que reta los límites.
+Se pueden hacer muchas cosas para ser eficiente con el hardware, pero una cosa que se puede hacer es ayudar a extender la fecha de expiración en el hardware. Las computadoras no se gastan, no tienen partes móviles, sólo se vuelven obsoletas. Se vuelven obsoletas porque continuamente estamos creando software que reta los límites.
 
 ## Extendiendo la vida útil del hardware
 
