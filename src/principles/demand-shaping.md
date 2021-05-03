@@ -24,7 +24,7 @@ Carbon efficiency can be transparent to the end-user. You can be more efficient 
 
 But at some point, being transparently more carbon-efficient isn't enough. If the carbon cost of running an application right now is too high, we can change the user experience to reduce carbon emissions further. At the point the user is aware the application is running differently, it becomes a carbon-aware application.
 
-Demand shaping carbon-aware applications is all about the supply of carbon. When the carbon cost of running your application becomes high, shape the demand to match the supply of carbon. This can happen automatically, or the user can make a choice. 
+Demand shaping carbon-aware applications is all about the supply of carbon. When the carbon cost of running your application becomes high, shape the demand to match the supply of energy. This can happen automatically, or the user can make a choice. 
 
 ## Eco-modes
 
