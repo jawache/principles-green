@@ -1,40 +1,41 @@
 ---
-title: Demand Shaping
-summary: Build carbon-aware applications.
+title: Moldeo de la demanda
+summary: Crear aplicaciones que sean conscientes del carbono que emiten.
 order: 7
 tags: principle
 ---
 
-[Demand shifting](/principles/carbon-intensity/#heading-demand-shifting) is the strategy of moving workloads to regions or times when the carbon intensity is less, or to put it another way when the supply of renewable electricity is high.
+<!-- TODO: Definir si desplazamiento de la demanda es apropiado Y cambiar el link al header dentro de carbon-intensity -->
+[El desplazamiento de la demanda](/principles/carbon-intensity/#heading-demand-shifting) es una estrategia en la cual se reubican cargas de trabajo a diferentes regiones u horarios en los cuales la intensidad de carbono es menor, o visto de otra manera cuando la oferta de electidad renovable es alta.
 
-Demand shaping is a similar strategy, but instead of moving demand to a different region or time, we shape our demand, so it matches the existing supply.
+El moldeo de la demanda es una estrategia similiar, solo que en lugar de mover la demanda a una región o tiempo diferente, la demanda se ajusta para que coincida con el suministro existente.
 
-![alt_text](/assets/images/principles/demand-shaping-1.png "If supply is high, increase the demand - do more in your applications - if the supply is low, decrease demand - do less in your applications.")
+![alt_text](../assets/images/principles/demand-shaping-1.png "Si la oferta es alta, aumente la demanda; haga más en sus aplicaciones; si la oferta es baja, disminuya la demanda; haga menos en sus aplicaciones.")
 
-A great example of this is video conferencing software. Rather than streaming at the highest quality possible at all times, they often shape the demand by reducing the video quality to prioritize audio.
+Un gran ejemplo de esto es el software de videoconferencia. En lugar de transmitir con la mayor calidad posible en todo momento, es posible reducir la demanda al reducir la calidad del video para priorizar el audio.
 
-Another example is TCP/IP. The transfer speed ramps up in response to how much data can broadcast over the wire. 
+Otro ejemplo es TCP/IP. La velocidad de transferencia aumenta en respuesta a la cantidad de datos que se pueden transmitir por cable.
 
-A third example is progressive enhancement with the web. The web experience improves depending on the resources and bandwidth available on the end-users device. 
-[How To Measure The Power Consumption of Your Frontend](https://devblogs.microsoft.com/sustainable-software/how-to-measure-the-power-consumption-of-your-frontend-application/)
+Un tercer ejemplo es la mejora progresiva con la web. La experiencia web mejora según los recursos y el ancho de banda disponibles en el dispositivo de los usuarios finales.
+[Cómo medir el consumo de energía de su interfaz](https://devblogs.microsoft.com/sustainable-software/how-to-measure-the-power-consumption-of-your-frontend-application/)
 
-## Carbon-aware vs. carbon-efficient
+## Consciente de carbono vs. Eficiente en carbono
 
-Carbon efficiency can be transparent to the end-user. You can be more efficient at every level in converting carbon to useful functionality while still keeping the user experience the same.
+La eficiencia del carbono puede ser transparente para el usuario final. Puede ser más eficiente en todos los niveles al convertir el carbono en una funcionalidad útil y, al mismo tiempo, mantener la misma experiencia del usuario.
 
-But at some point, being transparently more carbon-efficient isn't enough. If the carbon cost of running an application right now is too high, we can change the user experience to reduce carbon emissions further. At the point the user is aware the application is running differently, it becomes a carbon-aware application.
+Pero hay un umbral en el que ser más eficientes en carbono no es suficiente. Si el costo de carbono de ejecutar una aplicación en este momento es demasiado alto, podemos cambiar la experiencia del usuario para reducir aún más las emisiones de carbono. En el momento en que el usuario se da cuenta de que la aplicación se está ejecutando de manera diferente, se convierte en una aplicación consciente del carbono.
 
-Demand shaping carbon-aware applications is all about the supply of carbon. When the carbon cost of running your application becomes high, shape the demand to match the supply of carbon. This can happen automatically, or the user can make a choice. 
+La demanda de aplicaciones conscientes del carbono tiene que ver con el suministro de carbono. Cuando el costo en términos de carbono de ejecutar su aplicación sea alto, configure la demanda para que se ajuste con el suministro de energía. Esto puede suceder automáticamente o el usuario puede elegir.
 
 ## Eco-modes
 
-Eco-modes are often used in life: for instance in cars or washing machines. When switched on, the performance changes as they consume fewer resources (gas/electricity) to perform the same task. It's not cost-free (otherwise, we would always choose eco-modes), so we make trade-offs. Because it's a trade-off, eco-modes are almost always presented to a user as a choice, and the user decides if they want to go with it and accept the compromises.
+Los modos ecológicos se utilizan a menudo, por ejemplo, en automóviles o lavadoras. Cuando este modo se active, el rendimiento cambia a medida que consumen menos recursos (gas / electricidad) para realizar la misma tarea. No es gratuito (de lo contrario, siempre elegiríamos modos ecológicos), por lo que hacemos concesiones. Debido a que es una compensación, los modos ecológicos casi siempre se presentan a un usuario como una opción, y el usuario decide si quiere usarlo y aceptar los compromisos.
 
-Software applications can also have eco-modes which when engaged changes application behavior in potentially two ways:
+Las aplicaciones de software también pueden tener modos ecológicos que, cuando se activan, cambian el comportamiento de la aplicación de dos formas potenciales:
 
-- **Intelligence**. Giving users information so they can make informed decisions.  
-- **Automatic**. The application automatically makes more aggressive decisions to reduce carbon emissions.
+- **Inteligencia**. Brindar información a los usuarios para que puedan tomar decisiones informadas.
+- **Automática**. La aplicación toma automáticamente decisiones más agresivas para reducir las emisiones de carbono.
 
-## Summary
+## Resumen
 
-Demand shaping is related to a broader concept in sustainability, which is to reduce consumption. We can achieve a lot by becoming more efficient with resources, but at some point, we also just need to consume less. As Green Software Engineers to be carbon-efficient means perhaps when the carbon intensity is high, instead of demand shifting compute, we consider canceling it. Reducing the demands of our application and the expectations of our end users.
+El moldeo de la demanda está relacionada con un concepto más amplio de sostenibilidad, que es reducir el consumo. Podemos lograr mucho volviéndonos más eficientes con los recursos, pero en algún momento, también necesitamos consumir menos. Como ingenieros de software ecológicos, ser eficientes en carbono significa que quizás cuando la intensidad del carbono es alta, en lugar de cambiar la demanda de cómputo, consideremos cancelarlo. Reducir las demandas de nuestra aplicación y las expectativas de nuestros usuarios finales.
