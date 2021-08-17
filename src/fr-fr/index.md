@@ -24,7 +24,7 @@ Voici les 8 principes en question :
 
 ## Qui devrait lire ceci ?
 
-Toute personne developpant, déployant ou gérant des applications.
+Toute personne développant, déployant ou gérant des applications.
 
 ## Résumé
 
