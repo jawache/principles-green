@@ -1,44 +1,44 @@
 ---
 title: Web Queue Worker
-summary: Recommendations from the principles of Green Software Engineering applied to a Web Queue Worker architecture
+summary: Recomendaciones de los principios de Ingeniería de Software Verde aplicados a una arquitectura de "Web Queue Worker"
 ---
 
-The [Web-Queue-Worker](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/web-queue-worker) architecture defines a web portion that handles HTTP requests and a worker portion that handles time or processing-intensive operations. A queue is used for asynchronous communication between the web and the worker.
+La arquitectura [Web-Cola-Trabajo](https://docs.microsoft.com/es-es/azure/architecture/guide/architecture-styles/web-queue-worker) define una parte web que maneja las solicitudes HTTP y una parte del trabajador que maneja el tiempo o las operaciones de procesamiento intensivo. Se utiliza una cola para la comunicación asincrónica entre la web y el trabajador.
 
-Applying the principles of Green Software Engineering, the following are examples of changes you can make to your Web-Queue-Worker architecture to optimize it for sustainability.
+Aplicando los principios de la Ingeniería de Software Verde, los siguientes son ejemplos de cambios que puede realizar en su arquitectura Web-Cola-Trabajo para optimizarla para la sostenibilidad.
 
-## Optimize your network traffic
+## Optimice el tráfico de su red
 
-Reduce the amount of traffic your architecture creates per operation as well as the distance each request and response travels.
+Reduzca la cantidad de tráfico que crea su arquitectura por operación, así como la distancia que recorre cada solicitud y respuesta.
 
-* Consider using caching headers, which allows browser caches and proxy caches to have enough information to confidently cache static assets. Caching static assets at the browser or proxy level allows future requests for those assets to be handled by those caches and reduces network traffic to your application.
-* Consider using a CDN to distribute your application's static assets closer to the source of a request. This distribution of assets reduces the distance all requests for static assets has to travel over the network.
-* Where possible, reduce the size and optimize your bundles and static assets.
-    * Consider using compression and decompression for data you transmit over the network. Compression and decompression is usually takes less overall energy than transmitting uncompressed data over the network.
+* Considere el uso de almacenamiento caché para guardar los encabezados, lo que permite que los cachés del navegador y los cachés de proxy tengan suficiente información para almacenar activos estáticos con confianza. El almacenamiento en caché de activos estáticos a nivel del navegador o del proxy permite que esas cachés manejen las solicitudes futuras de esos activos y reduce el tráfico de red a su aplicación.
+* Considere usar una [CDN](https://es.wikipedia.org/wiki/Red_de_distribuci%C3%B3n_de_contenidos) para distribuir los activos estáticos de su aplicación más cerca de la fuente de una solicitud. Esta distribución de activos reduce la distancia que tienen que recorrer todas las solicitudes de activos estáticos a través de la red.
+* Siempre que sea posible, reduzca el tamaño y optimice sus paquetes y activos estáticos.
+     * Considere usar compresión y descompresión para los datos que transmite a través de la red. La compresión y descompresión generalmente requieren menos energía en general que la transmisión de datos sin comprimir a través de la red.
 
-## Increase your compute utilization
+## Aumente la utilización de sus procesos
 
-Update your workload distribution and compute resources so that you use less resources at a higher utilization. This reduces the amount of energy your compute resources spend in an idle state, or using energy without doing work.
+Actualice la distribución de la carga de trabajo y los recursos informáticos para que haya una mayor utilización de los recursos. Esto reduce la cantidad de energía que gastan sus recursos informáticos en un estado inactivo.
 
-* If using virtual machines for compute resources and they have low utilization, consider reducing the size of those virtual machines to increase utilization. Smaller virtual machines with higher utilization usually use less energy than larger virtual machines with lower utilization given the same workload.
-* Evaluate migrating your workload to a PaaS where possible. Typically, PaaS solutions are sized more appropriately for their workload and can run those workloads at a high utilization on their underlying compute resources.
-* Consider using auto-scaling or burst capabilities for your compute resources over statically allocating compute resources for maximum capacity at all times. These capabilities allow you to increase and decrease your compute resources based on demand while keeping the utilization high on those compute resources.
+* Si usa máquinas virtuales para recursos de compute y tienen un uso moderado, considere reducir el tamaño de esas máquinas virtuales para aumentar su utilización. Las máquinas virtuales más pequeñas con una mayor utilización suelen utilizar menos energía que las máquinas virtuales más grandes con una menor utilización dada la misma carga de trabajo.
+* Evalúe la migración de su carga de trabajo a una PaaS siempre que sea posible. Por lo general, las soluciones PaaS se ajustan mejor a distintas cargas de trabajo y pueden ejecutarlas con una alta utilización de los recursos informáticos subyacentes.
+* Considere el uso de escalamiento automático para sus recursos informáticos sobre la asignación estática de los mismos. Estas capacidades le permiten aumentar y disminuir sus recursos informáticos en función de la demanda, al tiempo que mantiene una alta utilización de los recursos informáticos.
 
-## Optimize your database
+## Optimiza la base de datos
 
-Optimizing which database you use as well as how the data is stored can reduce the energy used to run the database as well decrease idle time waiting for queries to complete.
+La optimización de la base de datos que utiliza y la forma en que se almacenan los datos puede reducir la energía utilizada para su ejecución y reducir el tiempo de inactividad a la espera de que se completen las consultas.
 
-* Ensure you are using the best database for interacting with your data set. For example, if you are running many relational queries on your data set, a relational database is better suited and likely more efficient to use than NoSQL database.
-* If no single database is designed to handle all the ways you interact with you data set, consider keeping redundant copies of your data in different databases and using each database for the subset of interactions best suited for that database.
-* Consider using index if your database offers it.
-* Consider evaluating and optimizing your queries.
-* Consider using a database cache. In some cases, caching can reduce redundant queries to the database and decrease energy usage by the database, especially for complex or compute-intensive queries.
+* Asegúrese de estar utilizando la mejor base de datos para interactuar con sus datos. Por ejemplo, si está ejecutando muchas consultas relacionales, una base de datos relacional es más adecuada y probablemente más eficiente de usar que una base de datos no relacional (también conocida como NoSQL).
+* Si no hay una base de datos única diseñada para manejar todas las formas en que interactúa con su conjunto de datos, considere mantener copias redundantes de sus datos en diferentes bases de datos y usar cada una para el subconjunto de interacciones que mejor se adapte a esa base de datos.
+* Considere usar [un índice](https://es.wikipedia.org/wiki/%C3%8Dndice_(base_de_datos)) si su base de datos lo ofrece.
+* Considere evaluar y optimizar sus consultas.
+* Considere usar una memoria caché de base de datos. En algunos casos, el almacenamiento en caché puede reducir las consultas redundantes y disminuir el uso de energía de la misma, especialmente para consultas complejas o con uso intensivo de recursos informáticos.
 
-## Understand your latency limits
+## Comprende los límites de latencia
 
-In many cases, web applications are designed by default with very low latency expectations, assuming a response to a request should happen immediately or as soon as possible. This assumption can limit your options for reducing the energy usage in your application. Consider evaluating how your application is used and if you can relax the latency limits in some areas, which can increase your options for reducing carbon.
+En muchos casos, las aplicaciones web están diseñadas de forma predeterminada con expectativas de latencia muy bajas, asumiendo que la respuesta a una solicitud debe ocurrir inmediatamente o tan pronto como sea posible. Esta suposición puede limitar las opciones para reducir el uso de energía en su aplicación. Considere evaluar cómo se usa su aplicación y si pueden relajar los límites de latencia en algunas áreas, lo que puede aumentar sus opciones para reducir la huella de carbono de la aplicación.
 
-* Consider separating certain operations outside of the request/response cycle. For example, if there is a request to send an email that blocks the response until the email is sent, you can instead asynchronously send the email using a worker process and unblock the response.
-* Consider running worker processes a lower priority than web process. This prioritization allows worker processes to run only when compute resources are not needed by web processes and keeps utilization high.
-* Consider running the worker processes in a region with lower carbon intensity.
-* Consider delaying worker process to run when the carbon intensity is the lowest.
+* Considere separar ciertas operaciones fuera del ciclo de solicitud / respuesta. Por ejemplo, si hay una solicitud para enviar un correo electrónico que bloquea la respuesta hasta que se envía el correo electrónico, puede enviar el correo electrónico de forma asincrónica mediante un proceso de trabajo y desbloquear la respuesta.
+* Considere la posibilidad de ejecutar procesos de trabajo con una prioridad menor que los procesos web. Esta priorización permite que los procesos de trabajo se ejecuten solo cuando los procesos web no necesitan recursos informáticos y mantiene una alta utilización.
+* Considere ejecutar los procesos de trabajo en una región con menor intensidad de carbono.
+* Considere retrasar el proceso de trabajo para que se ejecute cuando la intensidad de carbono sea la más baja.
