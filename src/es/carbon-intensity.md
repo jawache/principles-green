@@ -26,7 +26,7 @@ La demanda de electricidad varía a lo largo del día, esa demanda debe ser cubi
 
 Como subproducto de la manera en la que los mercados energéticos funcionan, a medida que la demanda de electricidad disminuye, habitualmente las fuentes basadas en combustibles fósiles de grandes emisiones reducen su producción primero y las renovables la reducen de últimas.
 
-> Reducir la cantidad de electricidad cpnsumida por tu aplicación puede ayudar a **disminuir** la intensidad de carbono en la mezcla de las redes eléctricas locales.
+> Reducir la cantidad de electricidad consumida por tu aplicación puede ayudar a **disminuir** la intensidad de carbono en la mezcla de las redes eléctricas locales.
 
 ### Intensidad de carbono marginal
 
