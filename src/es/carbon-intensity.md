@@ -1,63 +1,61 @@
 ---
-title: Carbon Intensity
-summary: Consume electricity with the lowest carbon intensity
+title: Intensidad de carbono
+summary: Consuma electricidad con la mínima intensidad de carbono
 order: 3
 tags: principle
 ---
 
-The carbon intensity of electricity is a measure of how much carbon (CO<sub>2</sub>eq) emissions are produced per kilowatt-hour of electricity consumed.
+La intensidad de carbono de la electricidad es una medida de cuantas emisiones de carbono (CO<sub>2</sub>eq) se producen por kilovatio hora de electricidad consumida.
 
-The standard unit of carbon intensity is gCO<sub>2</sub>eq/kWh or grams of carbon per kilowatt-hour.
+La unidad estándar de intensidad de carbono es gCO<sub>2</sub>eq/kWh o gramos de carbono equivalente por kilovatio hora.
 
-Not all electricity is produced in the same way. In different locations and at different times, the electricity is produced using a variety of sources with *different carbon emissions*. Some sources, such as wind, solar, or hydroelectric, are clean, *renewable sources* that emit no carbon. Other *fossil fuel sources* emit varying amounts of carbon to produce electricity. For example, gas-burning power plants emit less carbon than coal-burning power plants.
+No toda la electricidad se produce de la misma forma. En distintas ubicaciones a distintas horas, la electricidad se produce usando una variedad de fuentes con *distintas emisiones de carbono*. Algunas fuentes, como eólica, solar, o hidroeléctrica, son *fuentes de energía renovable* limpias que no emiten carbono. Otras *fuentes basadas en combustibles fósiles* emiten distintas cantidades de carbono para producir electricidad. Por ejemplo, las centrales termoeléctricas de gas emiten menos carbono que las centrales termoeléctricas de carbon.
 
-If your computer is plugged directly into a wind farm, then the electricity it consumes would have a carbon intensity of 0 gCO<sub>2</sub>eq/kWh since a wind farm emits no carbon to produce that electricity. Most people can’t plug directly into wind farms, they instead plug into power grids that are usually supplied with electricity from a mix of sources that produce varying amounts of carbon. Therefore, when plugged into a grid your carbon intensity is usually a number greater than 0. 
+Si su computadora está enchufada directamente a un parque eólico, entonces la electricidad que consume tendría una intensidad de carbono de 0 gCO<sub>2</sub>eq/kWh ya que un parque eólico no emite carbono para producir electricidad. La mayoría de gente no se pueden conectar directamente a un parque eólico, en su lugar se conectan a redes eléctricas que se suelen proveer de electricidad de una mezcla de fuentes que producen distintas cantidades de carbono. Por lo tanto, cuando se conecta a una red su intensidad de carbono es normalmente un número mayor que 0.
 
-## Variability of Carbon Intensity
+## Variabilidad de la intensidad de carbono
 
-- **Carbon intensity changes by location** since some regions have an energy mix that contains more sources of clean energy than other regions. 
-- **Carbon intensity also changes over time** due to the variable nature of renewable energy. For example, when it’s cloudy or the wind isn’t blowing, carbon intensity **increases** since more of the electricity in your mix is coming from sources that emit carbon.
+- **La intensidad de carbono cambia con la ubicación** ya que algunas regiones tienen una mezcla de energía que contiene más fuentes de energía limpia que otras regiones.
+- **La intensidad de carbono también cambia con el tiempo** debido a la naturaleza variable de las energías renovables. Por ejemplo, Cuando está nublado o no sopla el viento, la intensidad de carbono se incrementa ya que hay más electricidad proveniente de fuentes que emiten carbono en su mezcla.
 
+![alt_text](/assets/images/principles/carbon-intensity-1.png "La intensidad de carbono cambia con el tiempo al tiempo que las fuentes renovables se incrementan o decrementan.")
 
-![alt_text](/assets/images/principles/carbon-intensity-1.png "Carbon intensity changes over time as renewable sources increase or decrease.")
+La demanda de electricidad varía a lo largo del día, esa demanda debe ser cubierta por la oferta. Alguna de esa oferta _puede fácilmente_ controlar la potencia que produce, p. ej. una planta de carbon puede quemar menos carbón. Alguna de esa oferta _no puede fácilmente_ controlar la potencia que produce, p. ej. un parque eólico no puede controlar cuanto sopla el viento, solo puede descartar (disminuir) electricidad que se había generado esencialmente de forma gratuita.
 
-Demand for electricity varies during the day, that demand needs to be met by supply. Some of that supply _can easily_ control the power it produces, e.g. a coal power plant can burn less coal. Some of that supply _can’t easily_ control the power it produces, e.g. a wind farm can’t control how much the wind blows, it can only throw away (curtail) electricity that was made essentially for free.
+![alt_text](/assets/images/principles/carbon-intensity-2.png "Las fuentes de energía de origen fósil habitualmente son las primeras que disminuyen su producción y las renovables las últimas.")
 
-![alt_text](/assets/images/principles/carbon-intensity-2.png "Fossil Fuel sources of power are usually scaled back first and renewables scaled back last.")
+Como subproducto de la manera en la que los mercados energéticos funcionan, a medida que la demanda de electricidad disminuye, habitualmente las fuentes basadas en combustibles fósiles de grandes emisiones reducen su producción primero y las renovables la reducen de últimas.
 
-As a by-product of the way energy markets work as demand for electricity goes down usually the high emitting fossil fuel sources of power are scaled back first with renewables scaled back last.
+> Reducir la cantidad de electricidad consumida por tu aplicación puede ayudar a **disminuir** la intensidad de carbono en la mezcla de las redes eléctricas locales.
 
-> Reducing the amount of electricity consumed in your applications can help to **decrease** the carbon intensity of the energy mix in local grids.
+### Intensidad de carbono marginal
 
+Si elige consumir más energía, esa energía provendrá de una *central eléctrica de punta*. Esa central eléctrica puede controlar la cantidad de energía que produce, las renovables no pueden controlar el sol o el viento, así que las centrales eléctricas de punta suelen usar combustibles fósiles.
 
-### Marginal Carbon Intensity
+La central eléctrica marginal emite carbono, en cualquier momento tenemos la intensidad de carbono de la mezcla energética de la red eléctrica pero también la intensidad de carbono de la energía que debería habilitarse para cubrir la demanda, es lo que llamamos *intensidad de carbono marginal*.
 
-If you choose to consume more energy, that energy comes from the *marginal power plant*. That power plant is one that can control the energy it outputs, renewables cannot control the sun or the wind so marginal power plants are often powered by fossil fuels. 
+Las centrales eléctricas que consumen combustibles fósiles rara vez pueden reducir su producción a 0, tienen un límite mínimo de funcionamiento, algunas no pueden reducir su producción en absoluto y son consideradas centrales de base. Por este motivo, a veces podemos alcanzar el escenario perverso donde descartamos energía renovable que fue creada de forma gratuita para consumir energía proveniente de centrales termoeléctricas basadas en combustibles fósiles creada con combustibles que han costado dinero.
 
-The marginal plant emits carbon, at any moment we have the carbon intensity of the energy mix in the grid but also the carbon intensity of the energy that would have to be brought online to meet new demand, that's called the *marginal carbon intensity*.
+![alt_text](/assets/images/principles/carbon-intensity-3.png "Hay momentos cuando la intensidad de carbono marginal alcanza 0")
 
-Fossil fueled power plants rarely scale down to 0, they have a minimum functioning threshold, some don’t scale at all they are considered consistent always-on baseload. Because of this, we can sometimes reach the perverse scenario where we throw away (curtail) renewable energy that was created for free in order to consume energy from fossil fuel power plants created with a fuel that costs money.
+> La intensidad de carbono puede ser 0 gCO<sub>2</sub>eq/kWh cuando la nueva carga puede ser proveída con oferta de una fuente renovable que de otro modo habría sido descartada.
 
-![alt_text](/assets/images/principles/carbon-intensity-3.png "There are moments when the marginal carbon intensity reaches 0")
+### Desplazamiento de la demanda
 
-> The marginal carbon intensity could be 0 gCO<sub>2</sub>eq/kWh when new load would be met with supply from a renewable source that would otherwise have been curtailed.
+En la actualidad no tenemos muchos métodos para almacenar o amortiguar los sistemas de redes eléctricas. Normalmente la electricidad se produce de modo que la oferta siempre cubra la demanda. Si se genera más energía de fuentes renovables que la necesaria para soportar la demanda, y todas nuestras opciones de almacenamiento están llenas, entonces descartamos (tiramos) esa energía limpia. Una solución es desplazar las cargas de trabajo a horas y ubicaciones donde haya mayor suministro de energías renovables, esto se llama *desplazamiento de la demanda*.
 
-### Demand Shifting
+Si puede ser flexible con el cuando y donde ejecuta sus cargas de trabajo, entonces puede elegir consumir electricidad cuando la intensidad de carbono es menor y parar cuando la intensidad de carbono es alta. Por ejemplo, entrenar un modelo de aprendizaje de máquinas a una hora distinta o en una región distinta donde la intensidad de carbono sea mucho menor.
 
-There is currently little in the way of storage or buffering in electrical grid systems. Normally electricity is produced so supply always meets demand. If more energy is being generated from renewables than is needed to support demand, and all our storage options are full, then we curtail (throw away) that clean energy. One solution is to shift workloads to times and locations where there is more supply of renewable energy, this is called *demand shifting*.
+> [Estudios](https://ieeexplore.ieee.org/document/6128960) han mostrado que estas acciones pueden resultar en una reducción de emisiones de carbono entre el 45% y 99% dependiendo del número de renovables en la red.
 
-If you can be flexible with when and where you run workloads then you can then choose to consume electricity when the carbon intensity is less and pause when carbon intensity is high. For example, training a machine learning model at a different time or region where the carbon intensity is much lower.
+Mire su aplicación de extremo a extremo, identifique oportunidades para ser flexible respecto a las cargas de trabajo y use la intensidad de carbono de la electricidad como señal para cuando ejecutar esas cargas de trabajo.
 
-> [Studies](https://ieeexplore.ieee.org/document/6128960) have shown that these actions can result in a carbon reduction of as much as 45% to 99% depending on the number of renewables powering the grid.
+![alt_text](/assets/images/principles/demand-shifting-1.png "En este ejemplo la linea roja es la intensidad de carbono de la electricidad, si desplazamos la carga de trabajo un poco al futuro desde su hora preferida de ejecución, podemos sacar provecho de una intensidad de carbono de la electricidad menor.")
 
-Look at your application end-to-end, identify opportunities for being flexible regarding workloads and use the carbon intensity of electricity as a signal for when or if to run those workloads.
+### Calculando la intensidad de carbono
 
-![alt_text](/assets/images/principles/demand-shifting-1.png "In this example the red line is the carbon intensity of electricity, if we shift a workload a little into the future from it's preferred start time of midnight, we can take advantage of lower carbon intensity electricity.")
+Hay múltiples servicios disponibles que le permiten obtener datos en tiempo real sobre la intensidad de carbono actual de diferentes redes eléctricas, algunos proveen estimaciones de intensidad de carbono en el futuro, algunos proveen la intensidad de carbono marginal.
 
-### Calculating Carbon Intensity
-
-There are several services available which allow you to obtain real-time data regarding the current carbon intensity of different electricity grids, some provide estimates of future carbon intensity, some provide the marginal carbon intensity. 
-
-- [Carbon Intensity API](https://carbonintensity.org.uk/): Free resource for carbon intensity data in the UK.
-- [ElectricityMap](https://api.electricitymap.org/): Free for non-commercial single country use, premium solutions for commercial and multi-country access.
-- [WattTime](https://www.watttime.org/): Free for a single grid region, premium solutions for multi-grid and real-time marginal emissions.
+- [Carbon Intensity API](https://carbonintensity.org.uk/): Recurso gratuito para intensidad de carbono en el Reino Unido.
+- [ElectricityMap](https://api.electricitymap.org/): Gratuito para uso no comercial de un sñolo país, soluciones premium para uso comercial y acceso a múltiples países.
+- [WattTime](https://www.watttime.org/): Gratuito para una sola región de red, soluciones premium para multi-red y emisiones marginales en tiempo real.
