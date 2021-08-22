@@ -48,7 +48,7 @@ Si puede ser flexible con el cuando y donde ejecuta sus cargas de trabajo, enton
 
 > [Estudios](https://ieeexplore.ieee.org/document/6128960) han mostrado que estas acciones pueden resultar en una reducción de emisiones de carbono entre el 45% y 99% dependiendo del número de renovables en la red.
 
-Mire tu aplicación de extremo a extremo, identifique oportunidades para ser flexible respecto a las cargas de trabajo y use la intensidad de carbono de la electricidad como señal para cuando ejecutar esas cargas de trabajo.
+Mire su aplicación de extremo a extremo, identifique oportunidades para ser flexible respecto a las cargas de trabajo y use la intensidad de carbono de la electricidad como señal para cuando ejecutar esas cargas de trabajo.
 
 ![alt_text](/assets/images/principles/demand-shifting-1.png "En este ejemplo la linea roja es la intensidad de carbono de la electricidad, si desplazamos la carga de trabajo un poco al futuro desde su hora preferida de ejecución, podemos sacar provecho de una intensidad de carbono de la electricidad menor.")
 
