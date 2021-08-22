@@ -1,36 +1,36 @@
 ---
 title: N-Tier
-summary: Recommendations from the principles of Green Software Engineering applied to an N-Tier architecture
+summary: Recomendaciones de los principios de la Ingeniería de Software Verde aplicados a una arquitectura N-Tier
 ---
 
-The [N-tier](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier) architecture organizes your application into distinct logical layers based on their responsibility. Layers run on a series of physically separated tiers that represent compute resources.
+La arquitectura [N-tier](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier) organiza su aplicación en distintas capas lógicas en función de sus responsabilidades. Las capas se ejecutan en una serie de niveles separados físicamente que representan recursos de computo.
 
-Applying the principles of Green Software Engineering, the following are examples of changes you can make to your N-tier architecture to optimize it for sustainability.
+Aplicando los principios de la Ingeniería de Software Verde, los siguientes son ejemplos de cambios que puede realizar en su arquitectura de N-Tier para optimizar la sostenibilidad.
 
-## Optimize your network traffic
+## Optimiza el tráfico en la red
 
-Reduce the amount of traffic your architecture creates per operation as well as the distance each request and response travels.
+Reduzca la cantidad de tráfico que crea su arquitectura por operación, así como la distancia que recorre cada solicitud y respuesta.
 
-* Consider using caching headers, which allows browser caches and proxy caches to have enough information to confidently cache static assets. Caching static assets at the browser or proxy level allows future requests for those assets to be handled by those caches and reduces network traffic to your application.
-* Consider using a CDN to distribute your application's static assets closer to the source of a request. This distribution of assets reduces the distance all requests for static assets has to travel over the network.
-* Where possible, reduce the size and optimize your bundles and static assets.
-    * Consider using compression and decompression for data you transmit over the network. Compression and decompression is usually takes less overall energy than transmitting uncompressed data over the network.
+* Considere el uso de encabezados de almacenamiento en caché, lo que permite que los cachés del navegador y los cachés de proxy tengan suficiente información para almacenar en caché los activos estáticos. El almacenamiento en caché de activos estáticos a nivel del navegador o del proxy permite que esas cachés manejen las solicitudes futuras de esos activos y se reduzca el tráfico de red hacia su aplicación.
+* Considere utilizar una Red de Entrega de Contenido (CDN por sus siglas en inglés) para distribuir los activos estáticos de su aplicación más cerca de la fuente de una solicitud. Esta distribución de activos reduce la distancia que tienen que recorrer todas las solicitudes de activos estáticos a través de la red.
+* Siempre que sea posible, opmitice y reduzca el tamaño de sus paquetes y activos estáticos.
+    * Considere usar compresión y descompresión para los datos que transmite a través de la red. La compresión y descompresión generalmente requieren menos energía en general que la transmisión de datos sin comprimir a través de la red.
 
-## Increase your compute utilization
+## Imcrementa la utilización de recursos de computo
 
-Update your workload distribution and compute resources so that you use less resources at a higher utilization. This reduces the amount of energy your compute resources spend in an idle state, or using energy without doing work.
+Actualice la distribución de la carga de trabajo y los recursos informáticos para que utilice menos dispositivos con un mayor utilización. Esto reduce la cantidad de energía que gastan sus recursos informáticos en un estado inactivo o en el uso de energía sin trabajar.
 
-* If using virtual machines for compute resources and they have low utilization, consider reducing the size of those virtual machines to increase utilization. Smaller virtual machines with higher utilization usually use less energy than larger virtual machines with lower utilization given the same workload.
-* Evaluate migrating your workload to a PaaS where possible. Typically, PaaS solutions are sized more appropriately for their workload and can run those workloads at a high utilization on their underlying compute resources.
-* Consider using auto-scaling or burst capabilities for your compute resources over statically allocating compute resources for maximum capacity at all times. These capabilities allow you to increase and decrease your compute resources based on demand while keeping the utilization high on those compute resources.
-* If you have many logical layers in a physical tier, consider increasing your physical tiers and reorganizing where your logical layers run. The increased physical tiers with a more granular organization of logical layers allows you more flexibility to scale the logical layers independently. This flexibility allows you to keep utilization high on your compute resources and avoid idle logical layers.
+* Si usa máquinas virtuales para recursos de compute y tienen un uso moderado, considere reducir el tamaño de esas máquinas virtuales para aumentar su utilización. Las máquinas virtuales más pequeñas con una mayor utilización suelen utilizar menos energía que las máquinas virtuales más grandes con una menor utilización dada la misma carga de trabajo.
+* Evalúe la migración de su carga de trabajo a una PaaS siempre que sea posible. Por lo general, las soluciones PaaS se ajustan mejor a distintas cargas de trabajo y pueden ejecutarlas con una alta utilización de los recursos informáticos subyacentes.
+* Considere el uso de escalamiento automático para sus recursos informáticos sobre la asignación estática de los mismos. Estas capacidades le permiten aumentar y disminuir sus recursos informáticos en función de la demanda, al tiempo que mantiene una alta utilización de los recursos informáticos.
+* Si tiene muchas capas lógicas en un nivel físico, considere expandir sus niveles físicos y reorganizar dónde se ejecutan sus capas lógicas. Los niveles físicos aumentados con una organización más granular de capas lógicas le permiten más flexibilidad para escalarlas de forma independiente. Esta flexibilidad le permite mantener una alta utilización de sus recursos informáticos y evitar capas lógicas ociosas.
 
-## Optimize your database
+## Optimiza la base de datos
 
-Optimizing which database you use as well as how the data is stored can reduce the energy used to run the database as well decrease idle time waiting for queries to complete.
+La optimización de la base de datos que utiliza y la forma en que se almacenan los datos puede reducir la energía utilizada para su ejecución y reducir el tiempo de inactividad a la espera de que se completen las consultas.
 
-* Ensure you are using the best database for interacting with your data set. For example, if you are running many relational queries on your data set, a relational database is better suited and likely more efficient to use than NoSQL database.
-* If no single database is designed to handle all the ways you interact with you data set, consider keeping redundant copies of your data in different databases and using each database for the subset of interactions best suited for that database.
-* Consider using index if your database offers it.
-* Consider evaluating and optimizing your queries.
-* Consider using a database cache. In some cases, caching can reduce redundant queries to the database and decrease energy usage by the database, especially for complex or compute-intensive queries.
+* Asegúrese de estar utilizando la mejor base de datos para interactuar con sus datos. Por ejemplo, si está ejecutando muchas consultas relacionales, una base de datos relacional es más adecuada y probablemente más eficiente de usar que una base de datos no relacional (también conocida como NoSQL).
+* Si no hay una base de datos única diseñada para manejar todas las formas en que interactúa con su conjunto de datos, considere mantener copias redundantes de sus datos en diferentes bases de datos y usar cada una para el subconjunto de interacciones que mejor se adapte a esa base de datos.
+* Considere usar [un índice](https://es.wikipedia.org/wiki/%C3%8Dndice_(base_de_datos)) si su base de datos lo ofrece.
+* Considere evaluar y optimizar sus consultas.
+* Considere usar una memoria caché de base de datos. En algunos casos, el almacenamiento en caché puede reducir las consultas redundantes y disminuir el uso de energía de la misma, especialmente para consultas complejas o con uso intensivo de recursos informáticos.
