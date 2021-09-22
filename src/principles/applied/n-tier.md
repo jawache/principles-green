@@ -18,7 +18,7 @@ Reduce the amount of traffic your architecture creates per operation as well as 
 
 ## Increase your compute utilization
 
-Update your workload distribution and compute resources so that you use less resources at a higher utilization. This reduces the amount of energy your compute resources spend in an idle state, or using energy without doing work.
+Update your workload distribution and compute resources so that you use fewer resources at a higher utilization. This reduces the amount of energy your compute resources spend in an idle state, or using energy without doing work.
 
 * If using virtual machines for compute resources and they have low utilization, consider reducing the size of those virtual machines to increase utilization. Smaller virtual machines with higher utilization usually use less energy than larger virtual machines with lower utilization given the same workload.
 * Evaluate migrating your workload to a PaaS where possible. Typically, PaaS solutions are sized more appropriately for their workload and can run those workloads at a high utilization on their underlying compute resources.
