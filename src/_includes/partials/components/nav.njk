@@ -1,8 +1,11 @@
-{% if page.url.indexOf("fr-fr") == -1 %}
+{% if page.url.indexOf("fr-fr") == -1 and page.url.indexOf("es") == -1 %}
   {% set language = "" %}
-{% else %}
+{% elif page.url.indexOf("es") == -1 %}
   {% set language = "fr-fr" %}
+{% else %}
+  {% set language = "es" %}
 {% endif %}
+
 {% if navigation.items %}
   <nav class="nav" aria-label="{{ariaLabel}}">
     <ul class="[ nav__list ] [ box-flex align-center md:space-before ]">
@@ -26,9 +29,15 @@
          <li class="nav__item">
           {% if language == "" %}
             <a href="{{ item.url[1] }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text[1] }}</a>
-          {% else %}
+            <a href="{{ item.url[2] }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text[2] }}</a>
+          {% elif language == "fr-fr" %}
             <a href="{{ item.url[0] }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text[0] }}</a>
+            <a href="{{ item.url[1] }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text[1] }}</a>
+          {% elif language == "es" %}
+            <a href="{{ item.url[0] }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text[0] }}</a>
+            <a href="{{ item.url[2] }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text[2] }}</a>
           {% endif %}
+
         </li>
          {% endif %}
       {% endfor %}
