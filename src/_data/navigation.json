@@ -24,8 +24,8 @@
       "list": false
     },
     {
-      "text": ["EN","FR"],
-      "url": ["/","/fr-fr"],
+      "text": ["EN","ES","FR"],
+      "url": ["/","/es","/fr-fr"],
       "external": false,
       "list": true
     }

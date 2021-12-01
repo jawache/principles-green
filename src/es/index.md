@@ -3,6 +3,7 @@ layout: layouts/page.njk
 title: Principios de la Ingeniería Verde de Software
 summary: Competencias básicas necesarias para definir, construir y ejecutar aplicaciones de software verde sostenibles.
 showCTAButtons: yes
+language: es
 ---
 # Introducción
 
