@@ -1,8 +1,10 @@
 ---
+layout: layouts/page.njk
 title: Carbono
 summary: Construir aplicaciones que son carbono eficientes
 order: 1
 tags: principio
+language: es
 ---
 
 Los gases de efecto invernadero (GEI) actúan como una manta incrementando la temperatura en la superficie de la Tierra. Este es un efecto natural sin embargo debido a la huella de carbono humana; el clima global está cambiando mucho más rápido de lo que los animales y plantas se pueden adaptar. Cómo se va a adaptar la sociedad humana todavía es una pregunta abierta.

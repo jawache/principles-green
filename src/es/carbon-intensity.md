@@ -1,8 +1,10 @@
 ---
+layout: layouts/page.njk
 title: Intensidad de carbono
 summary: Consuma electricidad con la mínima intensidad de carbono
 order: 3
 tags: principle
+language: es
 ---
 
 La intensidad de carbono de la electricidad es una medida de cuantas emisiones de carbono (CO<sub>2</sub>eq) se producen por kilovatio hora de electricidad consumida.

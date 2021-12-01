@@ -1,4 +1,5 @@
 ---
+layout: layouts/page.njk
 title: Proporcionalidad de energía
 summary: Maximizar la eficiencia energética del hardware
 order: 5

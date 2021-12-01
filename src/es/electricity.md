@@ -1,4 +1,5 @@
 ---
+layout: layouts/page.njk
 title: Electricidad
 summary: Construyendo aplicaciones con eficiencia de energía
 order: 2

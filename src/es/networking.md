@@ -1,4 +1,5 @@
 ---
+layout: layouts/page.njk
 title: Networking
 summary: Reducir la cantidad de datos y la distancia que deben recorrer en la red
 order: 6

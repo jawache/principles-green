@@ -1,4 +1,5 @@
 ---
+layout: layouts/page.njk
 title: Medición y optimización
 summary: Enfocándose en optimizaciones paso a paso que incrementan la eficiencia de carbono en general
 order: 8

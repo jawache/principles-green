@@ -1,4 +1,5 @@
 ---
+layout: layouts/page.njk
 title: Carbono incorporado
 summary: Construir aplicaciones que sean eficientes con el hardware
 order: 4
