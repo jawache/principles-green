@@ -12,7 +12,7 @@ pour plus de détails concernant les causes et les impacts du changement climati
 
 Il existe de nombreux GES différents. Le plus courant est le dioxyde de carbone (CO<sub>2</sub>). Pour faciliter les calculs, nous normalisons tous les nombres de GES en _équivalent dioxyde de carbone_ (CO<sub>2</sub>eq). Par exemple, une tonne de méthane a le même effet de réchauffement qu'environ 80 tonnes de CO<sub>2</sub>, donc nous le normalisons à 80 tonnes de CO<sub>2</sub>eq. Nous pourrions même le ramener à seulement _carbone,_ terme souvent utilisé pour désigner l'ensemble des GES.
 
-L'objectif fixé par le [GIEC des Nations unies] (https://www.theguardian.com/environment/2011/dec/06/what-is-ipcc) et approuvé et ratifié par 195 États dans l'[Accord de Paris sur le climat] (https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) est de réduire la pollution par le carbone afin que l'augmentation de la température se stabilise à 1,5 °C d'ici 2100.
+L'objectif fixé par le [GIEC des Nations unies](https://www.theguardian.com/environment/2011/dec/06/what-is-ipcc) et approuvé et ratifié par 195 États dans l'[Accord de Paris sur le climat](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) est de réduire la pollution par le carbone afin que l'augmentation de la température se stabilise à 1,5 °C d'ici 2100.
 
 L'augmentation de la température sur la Terre dépend de la quantité totale de carbone que nous avons dans l'atmosphère, et non du rythme auquel nous émettons. Pour arrêter complètement le rythme de l'augmentation de la température, nous devons cesser d'ajouter du carbone dans l'atmosphère ou atteindre des émissions nettes nulles.
 
