@@ -2,6 +2,7 @@
 title: Demand Shaping
 summary: Build carbon-aware applications.
 order: 7
+redirect_url: https://learn.greensoftware.foundation/carbon-awareness#demand-shaping
 tags: principle
 ---
 
@@ -9,13 +10,13 @@ tags: principle
 
 Demand shaping is a similar strategy, but instead of moving demand to a different region or time, we shape our demand, so it matches the existing supply.
 
-![alt_text](/assets/images/principles/demand-shaping-1.png "If supply is high, increase the demand - do more in your applications - if the supply is low, decrease demand - do less in your applications.")
+![alt_text](/assets/images/principles/demand-shaping-1.png 'If supply is high, increase the demand - do more in your applications - if the supply is low, decrease demand - do less in your applications.')
 
 A great example of this is video conferencing software. Rather than streaming at the highest quality possible at all times, they often shape the demand by reducing the video quality to prioritize audio.
 
-Another example is TCP/IP. The transfer speed ramps up in response to how much data can broadcast over the wire. 
+Another example is TCP/IP. The transfer speed ramps up in response to how much data can broadcast over the wire.
 
-A third example is progressive enhancement with the web. The web experience improves depending on the resources and bandwidth available on the end-users device. 
+A third example is progressive enhancement with the web. The web experience improves depending on the resources and bandwidth available on the end-users device.
 [How To Measure The Power Consumption of Your Frontend](https://devblogs.microsoft.com/sustainable-software/how-to-measure-the-power-consumption-of-your-frontend-application/)
 
 ## Carbon-aware vs. carbon-efficient
@@ -24,7 +25,7 @@ Carbon efficiency can be transparent to the end-user. You can be more efficient 
 
 But at some point, being transparently more carbon-efficient isn't enough. If the carbon cost of running an application right now is too high, we can change the user experience to reduce carbon emissions further. At the point the user is aware the application is running differently, it becomes a carbon-aware application.
 
-Demand shaping carbon-aware applications is all about the supply of carbon. When the carbon cost of running your application becomes high, shape the demand to match the supply of carbon. This can happen automatically, or the user can make a choice. 
+Demand shaping carbon-aware applications is all about the supply of carbon. When the carbon cost of running your application becomes high, shape the demand to match the supply of carbon. This can happen automatically, or the user can make a choice.
 
 ## Eco-modes
 
@@ -32,7 +33,7 @@ Eco-modes are often used in life: for instance in cars or washing machines. When
 
 Software applications can also have eco-modes which when engaged changes application behavior in potentially two ways:
 
-- **Intelligence**. Giving users information so they can make informed decisions.  
+- **Intelligence**. Giving users information so they can make informed decisions.
 - **Automatic**. The application automatically makes more aggressive decisions to reduce carbon emissions.
 
 ## Summary

@@ -1,7 +1,8 @@
 ---
 title: Measurement & Optimization
-summary: Focus on step-by-step optimizations that increase the overall carbon efficiency 
+summary: Focus on step-by-step optimizations that increase the overall carbon efficiency
 order: 8
+redirect_url: https://learn.greensoftware.foundation/measurement/
 tags: principle
 ---
 
@@ -19,8 +20,7 @@ Measuring emitted carbon is a complex challenge, with parts of the stack that ne
 
 Because of the variability of carbon intensity and other dependencies, the total carbon emitted may change depending on the time of day or region the application is run.
 
-The same application measured at *different times* will result in different amounts of carbon. This could be a good signal, especially if you are open to demand-shifting workloads or it could be noise if you are focussing on energy optimizations.
-
+The same application measured at _different times_ will result in different amounts of carbon. This could be a good signal, especially if you are open to demand-shifting workloads or it could be noise if you are focussing on energy optimizations.
 
 ## Energy
 
@@ -34,21 +34,18 @@ Overall, though, creating applications that consume less electricity for the sam
 
 There are devices, tools and libraries available that help you measure the energy consumed by an application.
 
-- [Joulemeter (depreciated)](https://www.microsoft.com/en-us/research/project/joulemeter-computational-energy-measurement-and-optimization/) 
-Estimates the power consumption globally from the CPU, memory and disk however for a single application only stores the energy from the CPU. 
+- [Joulemeter (depreciated)](https://www.microsoft.com/en-us/research/project/joulemeter-computational-energy-measurement-and-optimization/)
+  Estimates the power consumption globally from the CPU, memory and disk however for a single application only stores the energy from the CPU.
 
- 
-- [PowerAPI](http://powerapi.org/)
-A system monitoring library only works for GNU/Linux and only calculates CPU energy, it does, however, calculate the energy used per process. 
+* [PowerAPI](http://powerapi.org/)
+  A system monitoring library only works for GNU/Linux and only calculates CPU energy, it does, however, calculate the energy used per process.
 
- 
 - [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget)
-Only works on Intel Core processors, only calculates power consumption due to the CPU and does not break this out on a per-process basis. 
- 
+  Only works on Intel Core processors, only calculates power consumption due to the CPU and does not break this out on a per-process basis.
+
 - [PowerCFG](https://devblogs.microsoft.com/sustainable-software/measuring-your-application-power-and-carbon-impact-part-1/) A Windows 10 tool allowing to have the electrical consumption per process.
 
 A thorough analysis of the various software and hardware tools to measure energy consumption can be found in the paper [Software development methodology in a Green IT environment](https://tel.archives-ouvertes.fr/tel-01724069/document).
-
 
 ## Cost
 
@@ -56,11 +53,10 @@ At some point, the cost of electricity is factored into _most_ services. Buildin
 
 ## Networking
 
-The cost of electricity in networking is often not considered. The number of services that offer unlimited bandwidth for a single price means there is little price pressure to reduce bandwidth.  
+The cost of electricity in networking is often not considered. The number of services that offer unlimited bandwidth for a single price means there is little price pressure to reduce bandwidth.
 
 Measuring and then reducing the amount and distance your data must travel is a good proxy for reducing carbon.
 
 ## Performance
 
 If you can architect an application that performs better **for the same level of utilization**, then this is likely to reduce overall carbon.
-

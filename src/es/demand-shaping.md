@@ -2,15 +2,17 @@
 title: Moldeo de la demanda
 summary: Crear aplicaciones que sean conscientes del carbono que emiten.
 order: 7
+redirect_url: https://learn.greensoftware.foundation/carbon-awareness#demand-shaping
 tags: principle
 ---
 
 <!-- TODO: Definir si desplazamiento de la demanda es apropiado Y cambiar el link al header dentro de carbon-intensity -->
+
 [El desplazamiento de la demanda](/principles/carbon-intensity/#heading-demand-shifting) es una estrategia en la cual se reubican cargas de trabajo a diferentes regiones u horarios en los cuales la intensidad de carbono es menor, o visto de otra manera cuando la oferta de electidad renovable es alta.
 
 El moldeo de la demanda es una estrategia similiar, solo que en lugar de mover la demanda a una región o tiempo diferente, la demanda se ajusta para que coincida con el suministro existente.
 
-![alt_text](../assets/images/principles/demand-shaping-1.png "Si la oferta es alta, aumente la demanda; haga más en sus aplicaciones; si la oferta es baja, disminuya la demanda; haga menos en sus aplicaciones.")
+![alt_text](../assets/images/principles/demand-shaping-1.png 'Si la oferta es alta, aumente la demanda; haga más en sus aplicaciones; si la oferta es baja, disminuya la demanda; haga menos en sus aplicaciones.')
 
 Un gran ejemplo de esto es el software de videoconferencia. En lugar de transmitir con la mayor calidad posible en todo momento, es posible reducir la demanda al reducir la calidad del video para priorizar el audio.
 

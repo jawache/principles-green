@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+    {# Redirect to google.com if REDIRECT_URL variable is undefined #}
+    {% if not REDIRECT_URL %}
+      <meta http-equiv="refresh" content="0; url=https://learn.greensoftware.foundation/">
+    {% endif %}
+
+    {# Redirect to REDIRECT_URL if it is a valid URL #}
+    {% if REDIRECT_URL  %}
+      <meta http-equiv="refresh" content="0; url={{ REDIRECT_URL }}">
+    {% endif %}
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
