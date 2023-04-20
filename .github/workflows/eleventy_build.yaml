@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup node
         uses: actions/setup-node@v1
         with:
@@ -16,7 +16,7 @@ jobs:
       - name: Build
         run: npm run production
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         env:
           PUBLISH_DIR: dist
           PUBLISH_BRANCH: gh-pages
