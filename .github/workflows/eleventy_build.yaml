@@ -1,22 +1,31 @@
 name: Eleventy Build
-on: [push]
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  build_deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup node
-        uses: actions/setup-node@v3
-      - name: Install npm packages
-        run: npm ci
-      - name: Build
-        run: npm run production
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: dist
-          publish_branch: gh-pages
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_SECRET }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build site
+      run: npx eleventy
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
