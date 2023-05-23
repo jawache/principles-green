@@ -4,7 +4,7 @@
 	<subtitle></subtitle>
 	<link href="https://principles.green/feed.xml" rel="self"/>
 	<link href="https://principles.green/"/>
-	<updated>2019-06-18T00:00:00+00:00</updated>
+	<updated>2019-06-18T03:00:00+03:00</updated>
 	<id>https://principles.green</id>
 	<author>
   <name>Asim Hussain</name>
@@ -13,9 +13,40 @@
 	
   
   <entry>
+    <title>A scheduled post</title>
+    <link href="https://principles.green/posts/a-scheduled-post/"/>
+    <updated>2022-06-18T03:00:00+03:00</updated>
+    <id>https://principles.green/posts/a-scheduled-post/</id>
+    <content type="html"><![CDATA[
+      <p>This post is scheduled for the future, specifically mid-2022. Hopefully you're still blogging by then too. Once that date ticks by, this post will automatically become published and visible.</p>
+<p>Otherwise, below is some styled content for you to play with.</p>
+<p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
+<p>How about a <code>&lt;blockquote&gt;</code>?</p>
+<blockquote>
+<p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+</blockquote>
+<p>A list of stuff:</p>
+<ul>
+<li>Sed posuere consectetur est at lobortis</li>
+<li>Aenean lacinia bibendum nulla sed consectetur</li>
+<li>Sed posuere consectetur est at lobortis</li>
+</ul>
+<p>How about an ordered list of stuff:</p>
+<ol>
+<li>Sed posuere consectetur est at lobortis</li>
+<li>Aenean lacinia bibendum nulla sed consectetur</li>
+<li>Sed posuere consectetur est at lobortis</li>
+</ol>
+<p>Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.</p>
+
+    ]]></content>
+  </entry>
+	
+  
+  <entry>
     <title>A simple post</title>
     <link href="https://principles.green/posts/a-simple-post/"/>
-    <updated>2019-06-18T00:00:00+00:00</updated>
+    <updated>2019-06-18T03:00:00+03:00</updated>
     <id>https://principles.green/posts/a-simple-post/</id>
     <content type="html"><![CDATA[
       <p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
@@ -44,7 +75,7 @@
   <entry>
     <title>A post with figures and video</title>
     <link href="https://principles.green/posts/a-post-with-figures-and-video/"/>
-    <updated>2019-06-18T00:00:00+00:00</updated>
+    <updated>2019-06-18T03:00:00+03:00</updated>
     <id>https://principles.green/posts/a-post-with-figures-and-video/</id>
     <content type="html"><![CDATA[
       <p>A post to demonstrate how a blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
@@ -66,7 +97,7 @@
   <entry>
     <title>A post with code samples</title>
     <link href="https://principles.green/posts/a-post-with-code-samples/"/>
-    <updated>2019-06-18T00:00:00+00:00</updated>
+    <updated>2019-06-18T03:00:00+03:00</updated>
     <id>https://principles.green/posts/a-post-with-code-samples/</id>
     <content type="html"><![CDATA[
       <p>The best way to demo a code post is to display a real life post, so check out this one from <a href="https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/">andy-bell.design</a> about a full bleed CSS utility.</p>
